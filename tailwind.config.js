@@ -6,7 +6,7 @@ module.exports = {
       colors:{
         bgColor: "#ffffff",
         textBg: "#000000",
-        touch: "#0466c8"
+        touch: "#00296b"
       },
     },
     fontFamily:{
