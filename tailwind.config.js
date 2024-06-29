@@ -6,13 +6,27 @@ module.exports = {
       colors:{
         bgColor: "#ffffff",
         textBg: "#000000",
-        touch: "#003566"
+        touch: "#0466c8"
       },
     },
     fontFamily:{
       Outfit:["Outfit","open sans"]
     }
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities }){
+      const newUtilities ={
+        ".no-scrollbar::-webkit-scrollbar":{
+          display:"none",
+        },
+        "no-scrollbar": {
+          "ms-overflow-style": "none",
+           "scrollbar-width": "none",
+        },
+      };
+
+      addUtilities(newUtilities)
+    }
+  ],
 }
 

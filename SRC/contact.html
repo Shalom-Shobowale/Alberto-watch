@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="bg-textBg sticky top-0 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-textBg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3 text-white bg-touch rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-touch dark:bg-touch md:dark:bg-transparent" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="About.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <li>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 md:w-auto dark:text-white md:dark:hover:text-touch dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg></button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Technology</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Store</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Product</a>
+                        </li>
+                      </ul>
+                      <div class="py-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Site Map</a>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <input type="text" placeholder="Search" class="hidden md:flex">
+        </div>
+    </nav> 
+    <div class="bg-slate-200 text-3xl flex justify-center">
+      <div class="w-[80%] flex items-center">
+        <h1 class="text-4xl font-semibold">About us</h1>
+        <div class="flex items-center gap-2">
+           <p><a href="index.html" class="text-[14px]">Home ></a></p>
+           <p>About</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-300 py-10">
+      <div class="flex flex-col md:flex-row gap-5 my-0 mx-auto w-[85%]">
+          <div class="bg-bgColor px-8 py-10 rounded-md sm:w-[50%]">
+            <h1 class="text-4xl font-semibold">Contact Details</h1>
+            <p class="border-b border-black py-5 text-gray-400">You can give us a call, drop us an email or book a one-to-one<br> appointment, we are here to help you and detangle your journey.</p>
+            <div class="flex gap-4 items-center my-5">
+                <div class="h-16 w-16 rounded-full flex justify-center items-center bg-blue-200"><i class="fa-solid fa-location-pin text-2xl text-touch"></i></div>
+                <h1><a href="" class="font-bold">4,Peace,Command,Lagos state.</a></h1>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div class="h-16 w-16 rounded-full flex justify-center items-center bg-blue-200"><i class="fa-solid fa-phone text-2xl text-touch"></i></div>
+                <h1><a href="" class="font-bold">09038186039</a></h1>
+            </div>
+            <div class="flex gap-4 items-center my-5">
+                <div class="h-16 w-16 rounded-full flex justify-center items-center bg-blue-200"><i class="fa-solid fa-envelope text-2xl text-touch"></i></div>
+                <h1><a href="" class="font-bold">Shalom Shobowale</a></h1>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div class="h-16 w-16 rounded-full flex justify-center items-center bg-blue-200"><i class="fa-solid fa-clock text-2xl text-touch"></i></div>
+                <h1 class="font-bold">8am - 8pm</h1>
+            </div>
+        </div>
+        <form class="bg-bgColor px-10 py-7 rounded-md sm:w-[50%] flex items-center">
+          <div>
+            <h1 class="mb-5 text-4xl font-semibold">Get In touch</h1>
+            <div class="flex md:flex-row flex-col gap-5">
+              <input type="text" placeholder="Name" class="sm:w-[220px] rounded-md focus:outline-none focus:ring-0 p-3">
+              <input type="tel" name="number" id="number " placeholder="Number" class=" sm:w-[220px] rounded-md focus:outline-none focus:ring-0 p-3">
+            </div>
+            <div class="flex flex-col my-5">
+                <input type="email" name="email" id="main" placeholder="E-mail" class="mb-4 rounded-md focus:outline-none focus:ring-0 p-5">
+                <textarea name="" id="" cols="10" rows="5" placeholder="Massages" class="rounded-md focus:outline-none focus:ring-0 p-5"></textarea>
+            </div>
+            <button class="bg-touch py-3 px-10 rounded-sm text-bgColor">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
