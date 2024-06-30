@@ -8,74 +8,149 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <section class="h-screen bg-no-repeat bg-cover " style="background-image: url(image/bg-2.jpg);">
-    <nav class="bg-textBg fixed w-full z-10 top-0 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="" />
-        </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-textBg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+<nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="" />
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-textBg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-white bg-touch rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-touch dark:bg-touch md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="About.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
             <li>
-              <a href="index.html" class="block py-2 px-3 text-white bg-touch rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-touch dark:bg-touch md:dark:bg-transparent" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="About.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-            </li>
-            <li>
-              <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 md:w-auto dark:text-white md:dark:hover:text-touch dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Product <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-      </svg></button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Technology</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Store</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Product</a>
-                      </li>
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Site Map</a>
-                    </div>
-                </div>
-            </li>
-              <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 md:w-auto dark:text-white md:dark:hover:text-touch dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Technology</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Store</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Product</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Site Map</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </nav>  
-  </section>
-  <div class="flex justify-center bg-slate-100">
-    <div class="flex md:flex-row flex-col gap-5 py-16 bg-slate-100 w-[90%] md:w-[85%]">
+      <div class="flex items-center">
+      <input type="text" placeholder="Search" class="hidden md:flex rounded-sm">
+      <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </div>
+</nav> 
+
+<section class="flex justify-center items-center md:p-10 bg-no-repeat bg-cover bg-center md:h-screen" style="background-image: url(image/wall-paper.avif);">
+  <div class="md:w-[80%] flex justify-center gap-8">
+    <div class="flex md:flex-row flex-col justify-center">
+      <div class="md:w-[50%] flex">
+        <img src="image/5.png" alt="" class="w-[370px] h-[450px]">
+      </div>
+      <div class="md:w-[50%] p-10">
+        <h1 class="text-5xl font-bold text-bgColor">Time Keeps Ticking, Make Every Moment Count</h1>
+        <p class="my-3 text-bgColor">We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
+        <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-sm hover:bg-touch">Shop Now <i class="fa-solid fa-bag-shopping"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="flex justify-center bg-gray-100">
+    <div class="flex md:flex-row flex-col gap-5 py-16 w-[90%] md:w-[85%]">
       <div class="md:w-[30%] bg-red-400 rounded-md"></div>
       <div class="md:w-[70%] bg-white p-10 rounded-md">
         <div class="grid md:grid-cols-4 md:grid-rows-1 grid-cols-2 grid-rows-1 gap-5">
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/men3.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Men</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/women3.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Woman</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/mens1.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Child</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/couple3.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Couple</a></p>
+            </div>
+          </div>
         </div>
         <div class="grid md:grid-cols-4 md:grid-rows-1 grid-cols-2 grid-rows-1 mt-10 gap-5">
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
-          <div class="w-36 h-48 border-2 shadow-md"></div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/minimal.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Minimal</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/leather.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Leather</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/metal.png" alt="">
+            </div>
+            <div>
+              <p class="text-touch"><a href="">Metal</a></p>
+            </div>
+          </div>
+          <div class="w-36 h-48 border-2 shadow-md flex flex-col justify-center items-center">
+            <div>
+              <img src="image/smartwatch.png" alt="">
+            </div>
+            <div>
+              <p><a href="">Smart-Watch</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -163,37 +238,37 @@
   </div> -->
 
   <!-- Feature 2 -->
-   <section class="bg-slate-200 flex justify-center">
-    <div class="w-[88%] bg-purple- relative">
+   <section class="flex justify-center">
+    <div class="w-[88%] bg-purple">
       <div class="flex md:flex-row flex-col gap-5">
         <div class="md:w-[50%] bg-blue- rounded-md flex flex-col justify-center items-center">
-          <div class="flex items-center gap-5 py-5 px-10 bg-pink-800 mb-5 rounded-md justify-center">
+          <div class="flex items-center gap-5 py-5 px-10 shadow-md bg-bgColor mb-5 rounded-md justify-center">
             <div class="h-10 w-10 rounded-md bg-blue-200 flex justify-center items-center"><i class="fa-solid fa-shield text-2xl text-touch"></i></div>
             <div class="font-bold">A quality watch is at least made of<br> Stainless Steel</div>
           </div>
-          <div class="flex items-center gap-5 py-5 px-10 bg-orange-600 rounded-md justify-center ml-24">
+          <div class="flex items-center gap-5 py-5 px-10 shadow-md  bg-bgColor rounded-md justify-center ml-24">
             <div class="h-10 w-10 rounded-md bg-blue-200 flex justify-center items-center"><i class="fa-solid fa-shield text-2xl text-touch"></i></div>
             <div class="font-bold">A quality watch always has sapphire glass</div>
           </div>
-          <div class="flex items-center gap-5 py-5 px-10 bg-red-800 my-5 rounded-md justify-center">
+          <div class="flex items-center gap-5 py-5 px-10  bg-bgColor shadow-md my-5 rounded-md justify-center">
             <div class="h-10 w-10 rounded-md bg-blue-200 flex justify-center items-center"><i class="fa-solid fa-tag text-2xl"></i></div>
             <div class="font-bold">A good, affordable watch has a quartz<br> movement</div>
           </div>
-          <div class="flex items-center gap-5 px-10 py-5 bg-green-800 rounded-md justify-center ml-24">
+          <div class="flex items-center gap-5 px-10 py-5  bg-bgColor shadow-md rounded-md justify-center ml-24">
             <div class="h-10 w-10 rounded-md bg-blue-200 flex justify-center items-center"><i class="fa-solid fa-shield text-2xl text-touch"></i></div>
             <div class="font-bold">A quality watch always has sapphire glass</div>
           </div>
         </div>
-        <div class="md:w-[50%] bg-gray-">
+        <div class="md:w-[50%] relative">
           <div class="flex items-center">
             <div>
               <h1 class="text-red-600 text-[18px] my-2 font-semibold">Feature Product</h1>
               <h1 class="text-4xl font-bold">Neo Splash Blue Dial<br> Watch</h1>
               <p class="my-5">This 44mm Minimalist features a black sunray dial with Roman numeral and<br> stick indices, three-hand movement and a brown leather strap.</p>
-              <div>
-                <img src="image/p8.png" alt="" class="h-80 w-96 z-40">
+              <div class="-z-20">
+                <img src="image/p8.png" alt="" class="h-80 w-96">
               </div>
-              <div class="hidden md:flex w-40 h-40 rounded-full bg-red-400 absolute bottom-5 left-[500px]"></div>
+              <div class="hidden md:flex w-40 h-40 rounded-full bg-red-400 absolute bottom-5 -left-12"></div>
             </div>
           </div>
         </div>
@@ -204,10 +279,10 @@
 
 
   <!-- what our client says -->
-   <div class="flex justify-center">
-    <div class="bg-gray-200 h-screen w-[85%]">
-      <h1 class="text-4xl text-center font-bold pt-10">Whats our client say</h1>
-      <div class="mt-20 relative bg-blue-500 overflow-x-scroll no-scrollbar">
+   <div class="flex justify-center bg-slate-100">
+    <div class="w-[85%]">
+      <h1 class="text-4xl text-center font-bold my-14">Whats our client say</h1>
+      <div class="relative bg-blue-500 overflow-x-scroll no-scrollbar">
         <div class="h-0 w-[500px] border-b-[380px] border-black border-r-[100px] border-x-transparent"></div>
         <div class="flex flex-row gap-6 absolute top-16 left-28">
           <div class="bg-red-200 w-[500px] rounded-md p-8">
@@ -274,17 +349,17 @@
    <!-- limited -->
     <div class="my-14">
       <div class="text-center mb-10">
-        <h1 class="font-semibold text-4xl">Limited Edition Collection</h1>
+        <h1 class="font-semibold text-4xl mb-5">Limited Edition Collection</h1>
         <p>Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic<br> products with warranties.</p>
       </div>
       <div class="flex justify-center">
-        <div class="flex w-[88%]">
-          <div class="w-[50%] flex items-center justify-center">
+        <div class="flex md:flex-row flex-col gap-14 w-[88%]">
+          <div class="md:w-[50%] flex items-center justify-center">
             <div class="border p-6 rounded-md">
               <img src="image/sp-4.png" alt="" class="w-96">
             </div>
           </div>
-          <div class="bg-textBg w-[50%] rounde p-10 h-[500px] overflow-y-scroll no-scrollbar">
+          <div class="bg-textBg md:w-[50%] rounde p-10 h-[500px] overflow-y-scroll no-scrollbar">
             <div class="bg-bgColor hover:bg-touch py-3 rounded-md flex items-center">
               <div>
                 <img src="image/spt-1.png" alt="" class="w-32 h-32">
@@ -375,38 +450,50 @@
       </div>
     </div>
   <!-- footer -->
-  <div class="bg-black flex justify-center py-16">
-    <div class="flex md:flex-row flex-col gap-5 w-[85%]">
-      <div class="md:w-[25%] bg-yellow-300">
-        <div class="">
-          <img src="image/logo3.png" alt="">
+  <div class="bg-touch">
+    <div class="flex justify-center py-10">
+      <div class="flex md:flex-row flex-col gap-5 w-[88%]">
+        <div class="md:w-[30%] p-5 flex flex-col px-5 justify-center">
+          <div class="">
+            <img src="" alt="">
+          </div>
+          <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
+          <p class="font-bold text-white">Follow Us_____</p>
+          <div class="flex gap-5 my-3">
+            <div><a href=""><i class="text-bgColor fa-brands fa-facebook-f"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-linkedin"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-twitter"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
+          </div>
         </div>
-        <p>Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
-        <p class="font-bold text-white">Follow Us_____</p>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="md:w-[25%] list-none flex flex-col px-5 justify-center text-bgColor">
+          <p class="font-bold text-white my-3 text-xl">Products</p>
+          <li> Smart Watch</li>
+          <li class="my-3"> Luxury Watch</li>
+          <li> Vintage</li>
+          <li class="my-3"> Digital Watch</li>
+          <li> Dress Watch</li>
+        </div>
+  
+        <div class="md:w-[25%] list-none text-white flex flex-col px-5 justify-center">
+          <p class="font-bold text-white my-3 text-xl">Quick links</p>
+          <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
+          <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> About</a></li>
+          <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
+          <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> Gallery</a></li>
+          <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+        </div>
+  
+        <div class="md:w-[25%] text-white flex flex-col px-5 justify-center">
+          <p class="font-bold text-xl text-white my-3">Contact Us</p>
+          <p><i class="fa-solid fa-location-dot my-3"></i> A101, Mumbai India.</p>
+          <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
+          <p><i class="fa-solid fa-phone my-3"></i> +91-1234567890</p>
+          <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
         </div>
       </div>
-      <div class="md:w-[25%] bg-blue-300 h-40 list-none text-white">
-        <p class="font-bold text-white">Quick links</p>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> About</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Gallery</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
-      </div>
-      <div class="md:w-[25%] bg-red-200 h-40 text-white">
-        <p><i class="fa-solid fa-location-dot"></i> A101, Mumbai India.</p>
-        <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
-        <p><i class="fa-solid fa-phone"></i> +91-1234567890</p>
-        <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
-      </div>
-      <div class="md:w-[25%] bg-orange-200 h-40"></div>
     </div>
-    
+    <div class="bg-blue-900 p-2 text-center text-bgColor font-semibold">© 2024 Copyright: Alberto</div>
   </div>
   
   
