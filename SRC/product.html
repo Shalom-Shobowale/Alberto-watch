@@ -1,0 +1,656 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="image/Alberto2-remove.png" class="h-14" alt="" />
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-textBg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-white bg-touch rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-touch dark:bg-touch md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="About.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 md:w-auto dark:text-white md:dark:hover:text-touch dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#technology" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Technology</a>
+                    </li>
+                    <li>
+                      <a href="#store" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Store</a>
+                    </li>
+                    <li>
+                      <a href="#support" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Support</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#footer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Site Map</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center">
+      <input type="text" placeholder="Search" class="hidden md:flex rounded-sm">
+      <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </div>
+</nav> 
+
+<div class="bg-gray-100 flex justify-center border-b border-gray-300">
+    <div class="w-[80%] p-16">
+        <h1 class="text-4xl font-semibold">Products</h1>
+        <div class="flex items-center gap-2">
+            <div><a href="index.html" class="text-[16px] text-touch">Home</a></div>
+            <div class="text-[16px]"><span class="font-bold">></span>Products</div>
+        </div>
+    </div>
+</div>
+
+<div class="flex justify-center items-center" id="technology">
+    <div class="w-[85%] py-14">
+       <div class="flex md:flex-row flex-col bg-bgColor border shadow-md">
+            <div class="md:w-[50%] bg-bgColor border">
+                <div>
+                    <section class="bg-white text-gray-800 px-6 py-10">
+                        <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg flex flex-col-reverse">
+                            <!-- Tabs -->
+                            <div class="border-b border-gray-200">
+                                <nav class="flex flex-wrap justify-center -mb-px" id="tabs">
+                                    <button id="btn1" data-target="tab1" class="tab-link px-4 py-2 hover:border hover:border-touch focus:outline-none">
+                                        <img src="image/smartwatch.png" alt="" class="w-16 h-16">
+                                    </button>
+                                    <button id="btn2" data-target="tab2" class="tab-link px-4 py-2 hover:border hover:border-touch focus:outline-none">
+                                        <img src="image/sp-4.png" alt="" class="w-16 h-16">
+                                    </button>
+                                    <button id="btn3" data-target="tab3" class="tab-link px-4 py-2 hover:border hover:border-touch focus:outline-none">
+                                        <img src="image/mens1.png" alt="" class="w-16 h-16">
+                                    </button>
+                                    <button id="btn4" data-target="tab4" class="tab-link px-4 py-2 hover:border hover:border-touch focus:outline-none">
+                                        <img src="image/spt-3.png" alt="" class="w-16 h-16">
+                                    </button>
+                                    <button id="btn5" data-target="tab5" class="tab-link px-4 py-2 hover:border hover:border-touch focus:outline-none">
+                                        <img src="image/minimal.png" alt="" class="w-16 h-16">
+                                    </button>
+                                </nav>
+                            </div>
+                    
+                            <!-- Tab Content -->
+                            <div class="p-6">
+                                <div id="tab1" class="tab-content">
+                                    <img src="image/smartwatch.png" alt="" class="w-96">
+                                </div>
+                                <div id="tab2" class="tab-content hidden">
+                                    <img src="image/sp-4.png" alt="" class="w-96">
+                                </div>
+                                <div id="tab3" class="tab-content hidden">
+                                    <img src="image/metal.png" alt="" class="w-96">
+                                </div>
+                                <div id="tab4" class="tab-content hidden">
+                                    <img src="image/spt-3.png" alt="" class="w-96">
+                                </div>
+                                <div id="tab5" class="tab-content hidden">
+                                <img src="image/minimal.png" alt="" class="w-96">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="md:w-[50%] bg-bgColor px-10 border">
+                <div id="details1">
+                    <p class="text-red-500">Sports</p>
+                    <h1 class="text-3xl font-semibold my-2">Titan Mechanical</h1>
+                    <div class="flex items-center">
+                        <p class="flex gap-3">
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-regular fa-star text-touch"></i>
+                        </p>
+                        <h1>( Customer Review )</h1>
+                    </div>
+                    <div class="border-y">
+                        <div class="flex my-3">
+                            <h1><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                            <h1><i class="fa-solid fa-naira-sign"></i>20,000</h1>
+                        </div>
+                        <h6 class="font-bold text-red-500">Technology</h6>
+                        <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                        <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                        <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                        <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                        <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                    </div>
+                    <div class="flex md:flex-row flex-col justify-between">
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Select Size</h6>
+                            <div class="flex gap-2">
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Color</h6>
+                            <div class="flex gap-2 ">
+                                <div class="h-10 w-10 bg-green-400 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-600 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-800 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-950 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5 flex flex-col items-center">
+                        <div class="flex">
+                            <div class="w-10 h-10 border flex justify-center items-center">+</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">10</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">-</div>
+                        </div>
+                        <div class="flex flex-wrap gap-5 mt-3">
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="px-5 py-1 flex justify-center items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="hidden" id="details2">
+                    <p class="text-red-500">Sports</p>
+                    <h1 class="text-3xl font-semibold my-2">Smart-Watch Mechanical</h1>
+                    <div class="flex items-center">
+                        <p class="flex gap-3">
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-regular fa-star text-touch"></i>
+                        </p>
+                        <h1>( Customer Review )</h1>
+                    </div>
+                    <div class="border-y">
+                        <div class="flex my-3">
+                            <h1><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                            <h1><i class="fa-solid fa-naira-sign"></i>20,000</h1>
+                        </div>
+                        <h6 class="font-bold text-red-500">Technology</h6>
+                        <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                        <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                        <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                        <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                        <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Select Size</h6>
+                            <div class="flex gap-2">
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Color</h6>
+                            <div class="flex gap-2 ">
+                                <div class="h-10 w-10 bg-green-400 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-600 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-800 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-950 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="flex">
+                            <div class="w-10 h-10 border flex justify-center items-center">+</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">10</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">-</div>
+                        </div>
+                        <div class="flex gap-5 mt-3">
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="px-5 py-1 flex justify-center items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                        </div>
+                    </div>   
+                </div>
+                <!-- three -->
+                <div class="hidden" id="details3">
+                    <p class="text-red-500">Sports</p>
+                    <h1 class="text-3xl font-semibold my-2">Smart-Watch Mechanical3</h1>
+                    <div class="flex items-center">
+                        <p class="flex gap-3">
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-regular fa-star text-touch"></i>
+                        </p>
+                        <h1>( Customer Review )</h1>
+                    </div>
+                    <div class="border-y">
+                        <div class="flex my-3">
+                            <h1><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                            <h1><i class="fa-solid fa-naira-sign"></i>20,000</h1>
+                        </div>
+                        <h6 class="font-bold text-red-500">Technology</h6>
+                        <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                        <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                        <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                        <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                        <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Select Size</h6>
+                            <div class="flex gap-2">
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Color</h6>
+                            <div class="flex gap-2 ">
+                                <div class="h-10 w-10 bg-green-400 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-600 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-800 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-950 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="flex">
+                            <div class="w-10 h-10 border flex justify-center items-center">+</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">10</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">-</div>
+                        </div>
+                        <div class="flex gap-5 mt-3">
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="px-5 py-1 flex justify-center items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                        </div>
+                    </div>   
+                </div>
+                <!-- four -->
+                <div class="hidden" id="details4">
+                    <p class="text-red-500">Sports</p>
+                    <h1 class="text-3xl font-semibold my-2">Smart-Watch Mechanical4</h1>
+                    <div class="flex items-center">
+                        <p class="flex gap-3">
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-regular fa-star text-touch"></i>
+                        </p>
+                        <h1>( Customer Review )</h1>
+                    </div>
+                    <div class="border-y">
+                        <div class="flex my-3">
+                            <h1><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                            <h1><i class="fa-solid fa-naira-sign"></i>20,000</h1>
+                        </div>
+                        <h6 class="font-bold text-red-500">Technology</h6>
+                        <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                        <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                        <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                        <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                        <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Select Size</h6>
+                            <div class="flex gap-2">
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Color</h6>
+                            <div class="flex gap-2 ">
+                                <div class="h-10 w-10 bg-green-400 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-600 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-800 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-950 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="flex">
+                            <div class="w-10 h-10 border flex justify-center items-center">+</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">10</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">-</div>
+                        </div>
+                        <div class="flex gap-5 mt-3">
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="px-5 py-1 flex justify-center items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                        </div>
+                    </div>   
+                </div>
+                <!-- five -->
+                <div class="hidden" id="details5">
+                    <p class="text-red-500">Sports</p>
+                    <h1 class="text-3xl font-semibold my-2">Smart-Watch Mechanical5</h1>
+                    <div class="flex items-center">
+                        <p class="flex gap-3">
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-solid fa-star text-touch"></i>
+                            <i class="fa-regular fa-star text-touch"></i>
+                        </p>
+                        <h1>( Customer Review )</h1>
+                    </div>
+                    <div class="border-y">
+                        <div class="flex my-3">
+                            <h1><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                            <h1><i class="fa-solid fa-naira-sign"></i>20,000</h1>
+                        </div>
+                        <h6 class="font-bold text-red-500">Technology</h6>
+                        <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                        <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                        <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                        <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                        <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Select Size</h6>
+                            <div class="flex gap-2">
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                <h6 class="h-10 w-10 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h6 class="font-bold my-3">Color</h6>
+                            <div class="flex gap-2 ">
+                                <div class="h-10 w-10 bg-green-400 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-600 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-800 rounded-md"></div>
+                                <div class="h-10 w-10 bg-green-950 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="flex">
+                            <div class="w-10 h-10 border flex justify-center items-center">+</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">10</div>
+                            <div class="w-10 h-10 border flex justify-center items-center">-</div>
+                        </div>
+                        <div class="flex gap-5 mt-3">
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div>
+                                <button class="text-white bg-textBg font-semibold px-5 py-1 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="px-5 py-1 flex justify-center items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+       </div>
+    </div>
+</div>
+
+<div class="relative" id="store">
+    <div class="h-screen">
+        <div class="bg-black text-center py-28">
+            <h1 class="text-white text-4xl font-bold">Store <span class="text-red-600">Products</span></h1>
+        </div>
+    </div>
+    <div class="flex items-center justify-center gap-3 absolute top-48 left-[105px]">
+        <div class="bg-blue-300 h-96 w-64 rounded-md">
+            <div class="h-64 w-full bg-red-500 rounded-t-md">
+            <img src="" alt="">
+            </div>
+            <div class="bg-green-500">
+            <div class="pt-6 text-center">
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="text-center py-3">
+                <p>Reflex Play</p>
+            </div>
+            <div class="flex justify-center gap-5">
+                <p class="line-through"># 60,000</p>
+                <p># 40,000</p>
+            </div>
+            </div>
+        </div>
+        <div class="bg-blue-400 h-96 w-64 rounded-md">
+            <div class="h-64 w-full bg-red-500 rounded-t-md">
+            <img src="" alt="">
+            </div>
+            <div class="bg-green-500">
+            <div class="pt-6 text-center">
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="text-center py-3">
+                <p>Reflex Play</p>
+            </div>
+            <div class="flex justify-center gap-5">
+                <p class="line-through"># 60,000</p>
+                <p># 40,000</p>
+            </div>
+            </div>
+       
+        </div>
+
+        <div class="bg-blue-400 h-96 w-64 rounded-md">
+            <div class="h-64 w-full bg-red-500 rounded-t-md">
+            <img src="" alt="">
+            </div>
+            <div class="bg-green-500">
+            <div class="pt-6 text-center">
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="text-center py-3">
+                <p>Reflex Play</p>
+            </div>
+            <div class="flex justify-center gap-5">
+                <p class="line-through"># 60,000</p>
+                <p># 40,000</p>
+            </div>
+            </div>
+        </div>
+        <div class="bg-blue-400 h-96 w-64 rounded-md">
+            <div class="h-64 w-full bg-red-500 rounded-t-md">
+            <img src="" alt="">
+            </div>
+            <div class="bg-green-500">
+            <div class="pt-6 text-center">
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="text-center py-3">
+                <p>Reflex Play</p>
+            </div>
+            <div class="flex justify-center gap-5">
+                <p class="line-through"># 60,000</p>
+                <p># 40,000</p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- tabs number 2 -->
+ <div class="bg-gray-100" id="support">
+    <h1 class="text-5xl font-bold text-center py-10">Support</h1>
+    <div class="text-gray-800 p-6">
+        <div class="w-[85%] mx-auto bg-white shadow-md rounded-lg">
+            <!-- Tabs -->
+            <div class="border-b border-gray-200">
+                <nav class="flex flex-wrap -mb-px" id="tabs">
+                    <button data-target="tab1" class="tab-link px-4 py-2 font-bold text-touch border-b-2 border-blue-600 focus:outline-none">
+                        FQA'S
+                    </button>
+                    <button data-target="tab2" class="tab-link px-4 py-2 text-touch border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
+                        Customer Service
+                    </button>
+                    <button data-target="tab3" class="tab-link px-4 py-2 text-gray-600 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
+                        Tab 3
+                    </button>
+                </nav>
+            </div>
+    
+            <!-- Tab Content -->
+            <div class="p-6">
+                <div id="tab1" class="tab-content">
+                    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        <h2 id="accordion-flush-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                            <span>Are prices shown in local currency?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">All products on Watches.com are priced in US Dollars ($ USD). Customers located outside of the United States will see a total amount charged on their bank statement in the default currency their bank deals in. The difference between USD order total and the amount charged on your bank statement is due to currency conversion from your financial institution.</p>
+                        </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <span>Where is my order?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">All orders are processed and shipped out by 5pm (PST) Monday through Friday. Orders received after 12pm (PST) will be processed the next business day. All shipping times are estimates provided to us by our shipping partners. Weather or missed delivery attempts can often be a factor in delayed shipments. Also international shipments can often be delayed due to high variance with each country’s customs processing. To track your package, just find your shipping confirmation email from us and click Track Package.</p>
+                        </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <span>Are the watches 100% authentic?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, Watches.com is an Authorized Dealer of ALL the brands/watches we carry and they all come with full manufacturer warranties that are honored internationally. All of our watches sold are 100% Authentic Guaranteed, brand new, unworn and come in the original manufacturer packaging.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="tab2" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold mb-4">Content for Tab 2</h2>
+                    <p>This is the content for the second tab.</p>
+                </div>
+                <div id="tab3" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold mb-4">Content for Tab 3</h2>
+                    <p>This is the content for the third tab.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+  <!-- footer -->
+<div class="bg-touch" id="footer">
+<div class="flex justify-center py-10">
+    <div class="flex md:flex-row flex-col gap-5 w-[88%]">
+    <div class="md:w-[30%] p-5 flex flex-col px-5 justify-center">
+        <div class="">
+        <img src="" alt="">
+        </div>
+        <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
+        <p class="font-bold text-white">Follow Us_____</p>
+        <div class="flex gap-5 my-3">
+        <div><a href=""><i class="text-bgColor fa-brands fa-facebook-f"></i></a></div>
+        <div><a href=""><i class="text-bgColor fa-brands fa-linkedin"></i></a></div>
+        <div><a href=""><i class="text-bgColor fa-brands fa-twitter"></i></a></div>
+        <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
+        </div>
+    </div>
+    <div class="md:w-[25%] list-none flex flex-col px-5 justify-center text-bgColor">
+        <p class="font-bold text-white my-3 text-xl">Products</p>
+        <li> Smart Watch</li>
+        <li class="my-3"> Luxury Watch</li>
+        <li> Vintage</li>
+        <li class="my-3"> Digital Watch</li>
+        <li> Dress Watch</li>
+    </div>
+
+    <div class="md:w-[25%] list-none text-white flex flex-col px-5 justify-center">
+        <p class="font-bold text-white my-3 text-xl">Quick links</p>
+        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
+        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> About</a></li>
+        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
+        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> Gallery</a></li>
+        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+    </div>
+
+    <div class="md:w-[25%] text-white flex flex-col px-5 justify-center">
+        <p class="font-bold text-xl text-white my-3">Contact Us</p>
+        <p><i class="fa-solid fa-location-dot my-3"></i> A101, Mumbai India.</p>
+        <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
+        <p><i class="fa-solid fa-phone my-3"></i> +91-1234567890</p>
+        <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
+    </div>
+    </div>
+</div>
+<div class="bg-blue-900 p-2 text-center text-bgColor font-semibold">© 2024 Copyright: Alberto</div>
+</div>
+
+
+
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
