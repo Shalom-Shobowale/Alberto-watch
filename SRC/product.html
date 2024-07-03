@@ -40,6 +40,15 @@
         background-color: rgba(0,0,0,0.6);
         width: 100%;
     }
+    #On-hover{
+        display: flex;
+        opacity: 0;
+        transition: 0.6s;
+        background-color: rgba(0,0,0,0.6);
+    }
+    #On-hover:hover{
+        opacity: 1;
+    }
 </style>
 <body>
 <nav class="bg-textBg sticky top-0 z-20 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -873,50 +882,50 @@
 </div>
 
 <div class="flex justify-center mt-20">
-    <div class="w-[85%] gap-5 flex justify-between">
-        <div class="w-[30%] px-5">
+    <div class="w-[85%] gap-5 flex justify-between my-5">
+        <div class="w-[30%] px-5 bg-white shadow-md border">
             <h6 class="font-bold my-3">Search products</h6>
             <div class="flex items-center">
-                <input type="text" placeholder="Search" class="flex rounded-sm">
-                <div class="px-3 h-10 bg-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" placeholder="Search" class="flex rounded-sm w-full">
+                <div class="px-3 py-3 bg-bgColor flex items-center justify-center rounded-sm border border-textBg"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
 
              <!-- dropdown here -->
             <div class="border-y py-2 my-2">
-            <div class="flex items-center gap-4">
-                <p class="text-sm font-bold">Shop By Category</p>
-                <p class="dropdown cursor-pointer"><i class="fa-solid fa-caret-down"></i></p>
-            </div>
-            <div class="checkbox1 hidden">
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Men's Collection</p>
+                <div class="flex items-center gap-4">
+                    <p class="text-sm font-bold">Shop By Category</p>
+                    <p class="dropdown cursor-pointer"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Women's Collection</p>
+                <div class="checkbox1 hidden">
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Men's Collection</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Women's Collection</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Kids Collection</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Best of Couples</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Minimals Design</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Leather Strap</p>
+                    </div>
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
+                        <p>Smartwatch</p>
+                    </div>
                 </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Kids Collection</p>
-                </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Best of Couples</p>
-                </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Minimals Design</p>
-                </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Leather Strap</p>
-                </div>
-                <div class="flex gap-3">
-                    <input type="checkbox" name="click" id="">
-                    <p>Smartwatch</p>
-                </div>
-            </div>
             </div>
 
              <div>
@@ -947,27 +956,27 @@
                     <p class="dropdown cursor-pointer"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
                 <div class="checkbox1 hidden">
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm my-3">
                         <input type="radio" name="" id="">
                         <p> All brands</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm">
                         <input type="radio" name="" id="">
                         <p>Smart Watch</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm my-3">
                         <input type="radio" name="" id="">
                         <p>Vintage</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm">
                         <input type="radio" name="" id="">
                         <p>Luxury Watch</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm my-3">
                         <input type="radio" name="" id="">
                         <p> Digital Watch</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 items-center text-sm mb-3">
                         <input type="radio" name="" id="">
                         <p>Dress Watch</p>
                     </div>
@@ -980,32 +989,32 @@
                     <p class="dropdown cursor-pointer"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
                 <div class="checkbox1 hidden">
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Green</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Golden</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Silver</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Brown</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Red</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Yellow</p>
                     </div>
-                    <div class="flex gap-3">
-                        <input type="checkbox" name="click" id="">
+                    <div class="flex gap-3 items-center text-sm my-3">
+                        <input type="checkbox" name="click" id="" class="rounded">
                         <p>Blue</p>
                     </div>
                 </div>
@@ -1017,23 +1026,23 @@
                     <p class="dropdown cursor-pointer"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
                 <div class="checkbox1 hidden">
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 text-sm items-center my-3">
                         <input type="checkbox" name="click" id="">
                         <p>5 stars</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 text-sm items-center">
                         <input type="checkbox" name="click" id="">
                         <p>4 stars</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 text-sm items-center my-3">
                         <input type="checkbox" name="click" id="">
                         <p>3 stars</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 text-sm items-center">
                         <input type="checkbox" name="click" id="">
                         <p>2 stars</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 text-sm items-center my-3">
                         <input type="checkbox" name="click" id="">
                         <p>1 stars</p>
                     </div>
@@ -1045,10 +1054,10 @@
         </div>
 
         <div class="w-[70%]">
-            <div class="">
+            <div class="bg-bgColor p-2">
                 <!-- cards -->
                 <div class="flex justify-center mb-5">
-                    <div class="bg-orange-500 w-[100%] flex gap-3 items-center">
+                    <div class="w-[100%] flex gap-3 items-center">
                         <div class="bg-blue-400 h-96 w-72 rounded-md">
                             <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
                                 <div id="On-hover">
