@@ -669,6 +669,18 @@ body{
   z-index: 10;
 }
 
+.z-0{
+  z-index: 0;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -750,6 +762,11 @@ body{
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-mb-px{
@@ -1062,14 +1079,6 @@ body{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[100\]{
-  width: 100;
 }
 
 .max-w-2xl{

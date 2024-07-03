@@ -42,7 +42,7 @@
     }
 </style>
 <body>
-<nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+<nav class="bg-textBg sticky top-0 z-20 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="image/Alberto2-remove.png" class="h-14" alt="" />
@@ -85,7 +85,7 @@
               </div>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+            <a href="gallery.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
           </li>
           <li>
             <a href="contact.html" class="block py-2 px-3 text-bgColor rounded hover:bg-touch md:hover:bg-transparent md:border-0 md:hover:text-touch md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
@@ -100,6 +100,769 @@
 </nav> 
 
 <div class="bg-gray-100 flex justify-center border-b border-gray-300">
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="Close absolute right-2 top-2"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- for the second three cards -->
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="Close absolute right-2 top-2"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute z-10 hidden popUp" >
+        <div class="flex h-screen justify-center items-center">
+            <div class="w-[75%]">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
+                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
+                    <div class="md:w-[50%]">
+                        <div>
+                            <section class="bg-white text-gray-800">
+                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
+                                    <!-- Tabs -->
+                                    <div>
+                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/5.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/2.png" alt="" class="w-20 h-16">
+                                            </button>
+                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                                <img src="image/1.png" alt="" class="w-20 h-16">
+                                            </button>
+                                        </nav>
+                                    </div>
+                            
+                                    <!-- Tab Content -->
+                                    <div class="my-16">
+                                        <div class="tab-content">
+                                            <img src="image/5.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/sp-4.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/2.png" alt="" class="w-80">
+                                        </div>
+                                        <div class="tab-content hidden">
+                                            <img src="image/1.png" alt="" class="w-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            
+                    <div class="md:w-[50%] px-5 relative">
+                        <div class="mt-8">
+                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
+                            <div class="flex items-center my-2">
+                                <p class="flex gap-2">
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-solid fa-star text-touch"></i>
+                                    <i class="fa-regular fa-star text-touch"></i>
+                                </p>
+                                <h1> ( Customer Review )</h1>
+                            </div>
+                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                                <div class="flex gap-5 my-1">
+                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
+                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
+                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
+                                </div>
+                                <h6 class="font-bold text-red-600">Technology</h6>
+                                <div class="mb-2">
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-[14px] my-2">Product Features:</h6>
+                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
+                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
+                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
+                                </div> 
+
+                                <div class="flex items-center gap-6 my-4">
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-2">Select Size</h6>
+                                        <div class="flex gap-2">
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
+                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <h6 class="font-bold mb-3">Color</h6>
+                                        <div class="flex gap-2 ">
+                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
+                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                                <div class="flex">
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
+                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div>
+                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="w-[80%] p-16">
         <h1 class="text-4xl font-semibold">Products</h1>
         <div class="flex items-center gap-2">
@@ -109,10 +872,10 @@
     </div>
 </div>
 
-<div class="flex justify-center">
+<div class="flex justify-center mt-20">
     <div class="w-[85%] gap-5 flex justify-between">
-        <div class="w-[30%] bg-purple-400 px-5">
-            <h6>Search products</h6>
+        <div class="w-[30%] px-5">
+            <h6 class="font-bold my-3">Search products</h6>
             <div class="flex items-center">
                 <input type="text" placeholder="Search" class="flex rounded-sm">
                 <div class="px-3 h-10 bg-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -276,560 +1039,180 @@
                     </div>
                 </div>
             </div>  
+            <div class="my-10">
+                <img src="image/p4.jpg" alt="">
+            </div>
         </div>
 
         <div class="w-[70%]">
             <div class="">
-                <div class="relative">
-                    <div class="absolute z-10 hidden popUp" >
-                        <div class="flex h-screen justify-center items-center">
-                            <div class="w-[75%]">
-                                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
-                                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
-                                    <div class="md:w-[50%]">
-                                        <div>
-                                            <section class="bg-white text-gray-800">
-                                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
-                                                    <!-- Tabs -->
-                                                    <div>
-                                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
-                                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/5.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/2.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/1.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                        </nav>
-                                                    </div>
-                                            
-                                                    <!-- Tab Content -->
-                                                    <div class="my-16">
-                                                        <div class="tab-content">
-                                                            <img src="image/5.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/sp-4.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/2.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/1.png" alt="" class="w-80">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
+                <!-- cards -->
+                <div class="flex justify-center mb-5">
+                    <div class="bg-orange-500 w-[100%] flex gap-3 items-center">
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
+                                        <button  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
                                     </div>
-                            
-                                    <div class="md:w-[50%] px-5 relative">
-                                        <div class="mt-8">
-                                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
-                                            <div class="flex items-center my-2">
-                                                <p class="flex gap-2">
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-regular fa-star text-touch"></i>
-                                                </p>
-                                                <h1> ( Customer Review )</h1>
-                                            </div>
-                                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
-                                                <div class="flex gap-5 my-1">
-                                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
-                                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
-                                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
-                                                </div>
-                                                <h6 class="font-bold text-red-600">Technology</h6>
-                                                <div class="mb-2">
-                                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
-                                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
-                                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
-                                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
-                                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
-                                                </div>
-                                                <div>
-                                                    <h6 class="text-[14px] my-2">Product Features:</h6>
-                                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
-                                                </div> 
-                
-                                                <div class="flex items-center gap-6 my-4">
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-2">Select Size</h6>
-                                                        <div class="flex gap-2">
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-3">Color</h6>
-                                                        <div class="flex gap-2 ">
-                                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
-                                                <div class="flex">
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
-                                                </div>
-                                                <div class="flex gap-3">
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                        
+                                </div>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- second -->
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
+                                        <button id="btns" class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
                                     </div>
+                                </div>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- third card -->
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-red-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></div>
+                                        <div  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></div>
+                                        <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></div>
+                                    </div>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute z-10 hidden popUp" >
-                        <div class="flex h-screen justify-center items-center">
-                            <div class="w-[75%]">
-                                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
-                                    <div class="Close absolute right-2 top-2"><a href="">❌</a></div>
-                                    <div class="md:w-[50%]">
-                                        <div>
-                                            <section class="bg-white text-gray-800">
-                                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
-                                                    <!-- Tabs -->
-                                                    <div>
-                                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
-                                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/5.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/2.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/1.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                        </nav>
-                                                    </div>
-                                            
-                                                    <!-- Tab Content -->
-                                                    <div class="my-16">
-                                                        <div class="tab-content">
-                                                            <img src="image/5.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/sp-4.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/2.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/1.png" alt="" class="w-80">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="md:w-[50%] px-5 relative">
-                                        <div class="mt-8">
-                                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
-                                            <div class="flex items-center my-2">
-                                                <p class="flex gap-2">
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-regular fa-star text-touch"></i>
-                                                </p>
-                                                <h1> ( Customer Review )</h1>
-                                            </div>
-                                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
-                                                <div class="flex gap-5 my-1">
-                                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
-                                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
-                                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
-                                                </div>
-                                                <h6 class="font-bold text-red-600">Technology</h6>
-                                                <div class="mb-2">
-                                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
-                                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
-                                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
-                                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
-                                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
-                                                </div>
-                                                <div>
-                                                    <h6 class="text-[14px] my-2">Product Features:</h6>
-                                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
-                                                </div> 
-                
-                                                <div class="flex items-center gap-6 my-4">
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-2">Select Size</h6>
-                                                        <div class="flex gap-2">
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-3">Color</h6>
-                                                        <div class="flex gap-2 ">
-                                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
-                                                <div class="flex">
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
-                                                </div>
-                                                <div class="flex gap-3">
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                        
+                </div>
+                <!-- secondcard -->
+                <div class="flex justify-center">
+                    <div class="bg-orange-500 w-[100%] flex gap-3 items-center">
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
+                                        <button  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
                                     </div>
                                 </div>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
                             </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-                    <div class="absolute z-10 hidden popUp" >
-                        <div class="flex h-screen justify-center items-center">
-                            <div class="w-[75%]">
-                                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
-                                    <div class="absolute right-2 top-2" id="Close"><a href="">❌</a></div>
-                                    <div class="md:w-[50%]">
-                                        <div>
-                                            <section class="bg-white text-gray-800">
-                                                <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
-                                                    <!-- Tabs -->
-                                                    <div>
-                                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
-                                                            <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/5.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab2" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/sp-4.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/2.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
-                                                                <img src="image/1.png" alt="" class="w-20 h-16">
-                                                            </button>
-                                                        </nav>
-                                                    </div>
-                                            
-                                                    <!-- Tab Content -->
-                                                    <div class="my-16">
-                                                        <div class="tab-content">
-                                                            <img src="image/5.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/sp-4.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/2.png" alt="" class="w-80">
-                                                        </div>
-                                                        <div class="tab-content hidden">
-                                                            <img src="image/1.png" alt="" class="w-80">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="md:w-[50%] px-5 relative">
-                                        <div class="mt-8">
-                                            <h1 class="text-2xl font-semibold">Smart-Watch Mechanical</h1>
-                                            <div class="flex items-center my-2">
-                                                <p class="flex gap-2">
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-solid fa-star text-touch"></i>
-                                                    <i class="fa-regular fa-star text-touch"></i>
-                                                </p>
-                                                <h1> ( Customer Review )</h1>
-                                            </div>
-                                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
-                                                <div class="flex gap-5 my-1">
-                                                    <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>24,000</h1>
-                                                    <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>19,640</h1>
-                                                    <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
-                                                </div>
-                                                <h6 class="font-bold text-red-600">Technology</h6>
-                                                <div class="mb-2">
-                                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
-                                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
-                                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
-                                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
-                                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
-                                                </div>
-                                                <div>
-                                                    <h6 class="text-[14px] my-2">Product Features:</h6>
-                                                    <li class="text-[14px]"><span class="font-bold">SKU: </span>1998</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Id:</span> 0707</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Product Category:</span> Men's Wrist Watch</li>
-                                                    <li class="text-[14px]"><span class="font-bold">Battery Capacity:</span> 72 Hours</li>
-                                                </div> 
-                
-                                                <div class="flex items-center gap-6 my-4">
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-2">Select Size</h6>
-                                                        <div class="flex gap-2">
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">S</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">M</h6>
-                                                            <h6 class="h-7 w-7 border shadow-md rounded-md flex justify-center items-center">L</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-col items-center">
-                                                        <h6 class="font-bold mb-3">Color</h6>
-                                                        <div class="flex gap-2 ">
-                                                            <div class="h-4 w-4 bg-green-400 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-600 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-800 rounded-full"></div>
-                                                            <div class="h-4 w-4 bg-green-950 rounded-full"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
-                                                <div class="flex">
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">+</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center">10</div>
-                                                    <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
-                                                </div>
-                                                <div class="flex gap-3">
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div>
-                                                        <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                        
+                        <!-- second -->
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
+                                        <button id="btns" class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
+                                        <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
                                     </div>
                                 </div>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
                             </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-                    <!-- cards -->
-                    <div class="flex justify-center mb-5">
-                        <div class="bg-orange-500 w-[100%] flex gap-3 items-center">
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
-                                            <button  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="" alt="">
+                        <!-- third card -->
+                        <div class="bg-blue-400 h-96 w-72 rounded-md">
+                            <div class="h-64 w-full bg-red-500 rounded-t-md relative">
+                                <div id="On-hover">
+                                    <div class="w-full h-full absolute rounded-t-md"></div>
+                                    <div class="flex gap-3 bottom-2 right-[64px] absolute">
+                                        <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></div>
+                                        <div  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></div>
+                                        <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></div>
                                     </div>
                                 </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
-                                </div> 
+                                <img src="" alt="">
                             </div>
-                            <!-- second -->
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
-                                            <button id="btns" class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
+                            <div class="bg-green-500">
+                                <div class="pt-6 text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
                                 </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
-                                </div> 
-                            </div>
-                            <!-- third card -->
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-red-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></div>
-                                            <div  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></div>
-                                            <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></div>
-                                        </div>
-                                    </div>
-                                  <img src="" alt="">
+                                <div class="text-center py-3">
+                                <p>Reflex Play</p>
                                 </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- secondcard -->
-                    <div class="flex justify-center">
-                        <div class="bg-orange-500 w-[100%] flex gap-3 items-center">
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
-                                            <button  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
-                                </div> 
-                            </div>
-                            <!-- second -->
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-purple-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></button>
-                                            <button id="btns" class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></button>
-                                            <button class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></button>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
-                                </div> 
-                            </div>
-                            <!-- third card -->
-                            <div class="bg-blue-400 h-96 w-72 rounded-md">
-                                <div class="h-64 w-full bg-red-500 rounded-t-md relative">
-                                    <div id="On-hover">
-                                        <div class="w-full h-full absolute rounded-t-md"></div>
-                                        <div class="flex gap-3 bottom-2 right-[64px] absolute">
-                                            <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-cart-shopping"></i></div>
-                                            <div  class="btns h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-eye"></i></div>
-                                            <div class="h-8 w-8 flex justify-center items-center rounded-full bg-bgColor hover:bg-black"><i class="hover:text-bgColor fa-solid fa-arrow-right-arrow-left"></i></div>
-                                        </div>
-                                    </div>
-                                  <img src="" alt="">
-                                </div>
-                                <div class="bg-green-500">
-                                  <div class="pt-6 text-center">
-                                    <p>⭐⭐⭐⭐⭐</p>
-                                  </div>
-                                  <div class="text-center py-3">
-                                    <p>Reflex Play</p>
-                                  </div>
-                                  <div class="flex justify-center gap-5">
-                                    <p class="line-through"># 60,000</p>
-                                    <p># 40,000</p>
-                                  </div>
+                                <div class="flex justify-center gap-5">
+                                <p class="line-through"># 60,000</p>
+                                <p># 40,000</p>
                                 </div>
                             </div>
                         </div>
