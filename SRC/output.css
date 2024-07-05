@@ -665,6 +665,10 @@ body{
   top: 0.5rem;
 }
 
+.right-1\/2{
+  right: 50%;
+}
+
 .-z-20{
   z-index: -20;
 }
@@ -675,6 +679,10 @@ body{
 
 .z-20{
   z-index: 20;
+}
+
+.z-\[999\]{
+  z-index: 999;
 }
 
 .col-span-1{
@@ -836,6 +844,10 @@ body{
   margin-top: 2rem;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
 .block{
   display: block;
 }
@@ -954,6 +966,11 @@ body{
 
 .h-20{
   height: 5rem;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .w-10{
@@ -1088,6 +1105,10 @@ body{
   width: 70%;
 }
 
+.w-\[31\.5\%\]{
+  width: 31.5%;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1102,6 +1123,11 @@ body{
 
 .shrink-0{
   flex-shrink: 0;
+}
+
+.translate-x-2\/4{
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-180{
@@ -1215,6 +1241,10 @@ body{
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-0{
+  gap: 0px;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
@@ -1615,6 +1645,10 @@ body{
   text-align: end;
 }
 
+.font-Outfit{
+  font-family: Outfit, open sans;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1865,6 +1899,10 @@ no-scrollbar{
   text-decoration-line: underline;
 }
 
+.focus\:border-none:focus{
+  border-style: none;
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1888,6 +1926,10 @@ no-scrollbar{
 }
 
 @media (min-width: 640px){
+  .sm\:h-\[1320px\]{
+    height: 1320px;
+  }
+
   .sm\:w-\[220px\]{
     width: 220px;
   }
@@ -1896,8 +1938,16 @@ no-scrollbar{
     width: 50%;
   }
 
+  .sm\:w-\[31\.5\%\]{
+    width: 31.5%;
+  }
+
   .sm\:justify-around{
     justify-content: space-around;
+  }
+
+  .sm\:overflow-y-scroll{
+    overflow-y: scroll;
   }
 }
 
