@@ -1792,6 +1792,48 @@
 
 </div>
 
+<div class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="flex gap-3 items-center">
+        <h1 class="font-semibold">Visitor Count</h1>
+        <p id="visitor-count" class="bg-white shadow rounded px-3">0</p>
+    </div>
+</div>
+
+<script>
+    (async function() {
+    // Generate or retrieve a unique identifier for the visitor
+    const visitorIdKey = 'visitor-id';
+    let visitorId = localStorage.getItem(visitorIdKey);
+    
+    if (!visitorId) {
+        // Generate a new UUID
+        visitorId = crypto.randomUUID();
+        localStorage.setItem(visitorIdKey, visitorId);
+    }
+
+    // Define the backend endpoint to check/update the visitor count
+    const backendUrl = 'https://your-backend-url.com/visitor-count';
+
+    // Send the visitor ID to the backend and get the updated visitor count
+    try {
+        const response = await fetch(backendUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ visitorId })
+        });
+
+        const data = await response.json();
+
+        // Update the visitor count on the webpage
+        document.getElementById('visitor-count').textContent = data.visitorCount;
+    } catch (error) {
+        console.error('Error updating visitor count:', error);
+    }
+})();
+</script>
+
 <script src="main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
