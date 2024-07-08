@@ -7,7 +7,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="font-Outfit">
   <nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -59,18 +59,18 @@
         </ul>
       </div>
       <div class="hidden md:flex items-center">
-        <input type="text" placeholder="Search" class="md:flex rounded-sm">
+        <input type="text" placeholder="Search" class="md:flex rounded-sm p-2">
         <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
     </div>
   </nav>  
     
-    <div class="bg-gray-100 flex justify-center border-b border-gray-300">
-      <div class="w-[80%] p-16">
-        <h1 class="text-4xl font-semibold">Contact Us</h1>
+    <div class="flex justify-center border-b border-gray-300 bg-no-repeat bg-center bg-cover" style="background-image: url(image/dark-contact.png);">
+      <div class="w-[80%] py-28">
+        <h1 class="text-5xl font-semibold text-bgColor">Contact Us</h1>
         <div class="flex items-center gap-2">
-           <div><a href="index.html" class="text-[16px] text-touch">Home</a></div>
-           <div class="text-[16px]"><span class="font-bold">></span>Contact</div>
+           <div><a href="index.html" class="text-[16px] text-bgColor">Home</a></div>
+           <div class="text-[16px] text-bgColor flex items-center gap-2"><span><i class="fa-solid fa-greater-than text-sm"></i></span> Contact</div>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
 
     <div class="flex justify-center gap-5 mb-14">
       <div class="md:w-[85%] flex md:flex-row flex-col gap-6">
-        <form class="bg-bgColor px-8 rounded-sm shadow-md md:w-[65%] flex items-center">
+        <form class="bg-bgColor px-8 rounded-sm shadow-md md:w-[65%] flex items-center justify-center">
           <div>
             <h1 class="mb-5 text-4xl font-semibold">Get In touch</h1>
             <div class="flex md:flex-row flex-col gap-5">
@@ -165,14 +165,11 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63648042153!2d3.1191424844149163!3d6.548028243280464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1719707746858!5m2!1sen!2sng" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-
     <div class="bg-textBg">
       <div class="flex justify-center py-10">
         <div class="flex md:flex-row flex-col gap-5 w-[88%]">
-          <div class="md:w-[30%] p-5 flex flex-col px-5 justify-center">
-            <div class="">
-              <img src="" alt="">
-            </div>
+          <div class="md:w-[30%] flex flex-col px-5 justify-center">
+            <p class="font-bold text-white text-xl">Alberto</p>
             <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
             <p class="font-bold text-white">Follow Us_____</p>
             <div class="flex gap-5 my-3">
@@ -182,7 +179,7 @@
               <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
             </div>
           </div>
-          <div class="md:w-[25%] list-none flex flex-col px-5 justify-center text-bgColor">
+          <div class="md:w-[22%] list-none flex flex-col px-5 text-bgColor">
             <p class="font-bold text-white my-3 text-xl">Products</p>
             <li> Smart Watch</li>
             <li class="my-3"> Luxury Watch</li>
@@ -190,22 +187,67 @@
             <li class="my-3"> Digital Watch</li>
             <li> Dress Watch</li>
           </div>
-    
-          <div class="md:w-[25%] list-none text-white flex flex-col px-5 justify-center">
+  
+          <div class="md:w-[20%] list-none text-white flex flex-col px-5">
             <p class="font-bold text-white my-3 text-xl">Quick links</p>
-            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
-            <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> About</a></li>
-            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
-            <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> Gallery</a></li>
-            <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+            <li>
+              <a href="index.html" class="gap-5 flex items-center">
+                <i class="fa-solid fa-arrow-right"></i>
+                 <h1>Home</h1>
+              </a>
+            </li>
+            <li>
+              <a href="About.html" class="gap-5 flex items-center">
+                <i class="fa-solid fa-arrow-right my-3"></i>
+                <h1>About</h1>
+                </a>
+              </li>
+            <li>
+              <a href="product.html" class="gap-5 flex items-center">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h1>Product</h1>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html" class="gap-5 flex items-center">
+                <i class="fa-solid fa-arrow-right my-3"></i>
+                 <h1>Gallery</h1>
+                </a>
+              </li>
+            <li>
+              <a href="contact.html" class="gap-5 flex items-center">
+                <i class="fa-solid fa-arrow-right"></i>
+                 <h1>Contact Us</h1>
+                </a>
+              </li>
           </div>
-    
-          <div class="md:w-[25%] text-white flex flex-col px-5 justify-center">
+  
+          <div class="md:w-[30%] text-white flex flex-col px-5">
             <p class="font-bold text-xl text-white my-3">Contact Us</p>
-            <p><i class="fa-solid fa-location-dot my-3"></i> A101, Mumbai India.</p>
-            <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
-            <p><i class="fa-solid fa-phone my-3"></i> +91-1234567890</p>
-            <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
+            <p>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <h1>07,Command,Lagos State.</h1>
+              </div>
+            </p>
+            <p class="">
+              <div class="flex gap-3 items-center my-2">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>shalom@gmail.com</h1>
+              </div>
+            </p>
+            <p>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone"></i>
+                <h1>+2349038186039</h1>
+              </div>
+            </p>
+            <p>
+              <div class="flex gap-3 mt-2">
+                <i class="fa-solid fa-clock"></i>
+                <h1>Mon-Sat 7:00am - 7:00pm</h1>
+              </div>
+            </p>
           </div>
         </div>
       </div>

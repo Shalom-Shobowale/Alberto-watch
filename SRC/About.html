@@ -7,7 +7,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="font-Outfit">
   <nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:justify-around mx-auto p-4">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -59,33 +59,54 @@
         </ul>
       </div>
       <div class="hidden md:flex items-center">
-        <input type="text" placeholder="Search" class="md:flex rounded-sm">
+        <input type="text" placeholder="Search" class="md:flex rounded-sm p-2">
         <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
     </div>
   </nav>  
 
-<div class="bg-gray-100 flex justify-center border-b border-gray-300">
-  <div class="w-[80%] p-16">
-    <h1 class="text-4xl font-semibold">About Us</h1>
+<div class="flex justify-center border-b border-gray-300 bg-center bg-cover bg-no-repeat" style="background-image: url(image/dark-about.png);">
+  <div class="w-[80%] py-28">
+    <h1 class="text-4xl font-semibold text-bgColor">About Us</h1>
     <div class="flex items-center gap-2">
-       <div><a href="index.html" class="text-[16px] text-touch">Home</a></div>
-       <div class="text-[16px]"><span class="font-bold">></span>About</div>
+       <div><a href="index.html" class="text-[16px] text-bgColor">Home</a></div>
+       <div class="text-[16px] text-bgColor flex items-center gap-2"><span><i class="fa-solid fa-angle-right"></i></span> About</div>
+
     </div>
   </div>
 </div>
 
 <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-5 mx-5 md:mx-20 mt-14">
     <div class="flex items-center">
-      <div class="text-justify p-10">
+      <div class="text-justify">
         <h1 class="font-bold text-4xl my-4">Find Your Perfect Match</h1>
-        <p>Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties. Who does not love to style fashionably? Fashionable watches will be an excellent accessory for your everyday wear or occasion.</p>
-        <p class="my-5">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties. Who does not love to style fashionably? Fashionable watches will be an excellent accessory for your everyday wear or occasion.</p>
-        <button class="p-3 rounded-md bg-blue-800 text-bgColor">Read More <i class="fa-solid fa-arrow-right"></i></button>
+        <p>Welcome to Alberto Watch, where timeless elegance meets modern innovation. Established in 2008, our passion for precision and style has driven us to create wristwatches that not only tell time but also tell a story.</p>
+        <p class="my-5">Our journey began with a simple vision: to craft watches that combine the artistry of traditional watchmaking with contemporary design. Over the years, we've grown from a small workshop into a globally recognized brand, celebrated for our dedication to quality, innovation, and aesthetic appeal.</p>
+        <div class="hidden" id="About">
+          <p>Welcome to Alberto Watch, where timeless elegance meets modern innovation. Established in 2008, our passion for precision and style has driven us to create wristwatches that not only tell time but also tell a story.Our journey began with a simple vision: to craft watches that combine the artistry of traditional watchmaking with contemporary design. Over the years, we've grown from a small workshop into a globally recognized brand, celebrated for our dedication to quality, innovation, and aesthetic appeal.
+          <h1 class="font-bold text-3xl my-5">Our Craftsmanship</h1>
+          <p>At [Your Brand Name], we believe that a watch is more than just a timepiece. It’s a reflection of individuality, a symbol of achievement, and a companion for life’s moments. Each of our watches is meticulously designed and crafted with the finest materials, ensuring durability and elegance that stand the test of time.
+          Our team of expert watchmakers and designers work hand in hand to bring you collections that are both stylish and functional. From the intricate mechanics of our movements to the flawless finish of our cases, every detail is a testament to our commitment to excellence.
+          </p>
+          <h1 class="font-bold text-3xl my-5">Our Values</h1>
+          <li><span class="font-semibold">Quality:</span> We use only the highest quality materials and cutting-edge technology to ensure that our watches are as reliable as they are beautiful.</li>
+          <li><span class="font-semibold my-3">Innovation:</span> We strive to blend traditional craftsmanship with modern advancements, creating watches that are both classic and contemporary.</li>
+          <li><span class="font-semibold">Sustainability:</span> We are committed to sustainable practices, from sourcing eco-friendly materials to supporting ethical labor standards in our manufacturing processes.</li>
+          <li><span class="font-semibold my-5">Customer Satisfaction:</span> Your satisfaction is our top priority. We provide exceptional customer service and a seamless shopping experience to make owning a [Your Brand Name] watch as enjoyable as possible.</li>
+          <h1 class="font-bold text-3xl">Our Collections</h1>
+          <p class="my-5">Explore our diverse range of collections, each designed to cater to different tastes and lifestyles. Whether you prefer the timeless elegance of our [Collection Name], the rugged durability of our [Collection Name], or the sleek modernity of our [Collection Name], you’ll find a watch that perfectly complements your personality and needs.</p>
+          <h1 class="font-bold text-3xl">Our Promise</h1>
+          <p class="my-4">We stand by every watch we create, offering a comprehensive warranty and unparalleled customer support. Our promise is simple: to deliver timepieces that you can trust and cherish for years to come.</p>
+          <h1 class="font-bold text-3xl my-4">Join Our Community</h1>
+          <p>We invite you to join our growing community of watch enthusiasts and discover the [Your Brand Name] difference. Follow us on [Social Media Links] for the latest news, exclusive offers, and behind-the-scenes insights into our world of watchmaking.</p>
+          <p class="my-5">Thank you for choosing [Your Brand Name]. We look forward to being part of your journey.</p>
+        </div>
+        </p>
+        <button class="p-3 rounded-md bg-blue-800 text-bgColor" id="readmore">Read More <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
-    <div class="border border-black">
-      <img src="image/wrist man.webp" alt="" class="h-full">
+    <div>
+      <img src="image/wrist man.webp" alt="" class="w-full">
     </div>
 </div>
 <div class="mt-14">
@@ -95,7 +116,7 @@
       <div class="grid grid-cols-1 grid-rows-3 gap-8 w-[95%] md:w-[33%]">
         <div class="bg-bgColor shadow-md py-10 px-10 rounded-md text-end relative">
           <div>
-            <h1>Authorized Retailer</h1>
+            <h1 class="font-semibold mb-2">Authorized Retailer</h1>
             <p>We an authorized retailer with over 40</p>
             <p>plus luxury watch brands.</p>
           </div>
@@ -105,9 +126,9 @@
         </div>
         <div class="shadow-md py-6 px-10 rounded-md text-end relative">
           <div>
-            <h1>Authorized Retailer</h1>
-            <p>We an authorized retailer with over 40</p>
-            <p>plus luxury watch brands.</p>
+            <h1 class="font-semibold mb-2">Largest Selection</h1>
+            <p>Employing over 350 people in India, at</p>
+            <p>ethics integral part.</p>
           </div>
           <div class="w-14 h-14 flex items-center justify-center bg-white rounded-md shadow-md absolute top-12 -right-6">
             <img src="image/choice.png" alt="" class="w-10 h-10">
@@ -115,9 +136,9 @@
         </div>
         <div class="shadow-md py-6 px-10 rounded-md text-end relative">
           <div>
-            <h1>Authorized Retailer</h1>
-            <p>We an authorized retailer with over 40</p>
-            <p>plus luxury watch brands.</p>
+            <h1 class="font-semibold mb-2">Customer Trust</h1>
+            <p>we have the largest selection in every</p>
+            <p>brand.</p>
           </div>
           <div class="w-14 h-14 flex items-center justify-center shadow-md bg-white rounded-md absolute top-12 -right-6">
             <img src="image/honesty.png" alt="" class="w-10 h-10">
@@ -130,9 +151,9 @@
       <div class="grid grid-cols-1 grid-rows-3 gap-5 w-[95%] md:w-[33%]">
         <div class="shadow-md py-10 px-10 rounded-md text-end relative">
           <div>
-            <h1>Authorized Retailer</h1>
-            <p>We an authorized retailer with over 40</p>
-            <p>plus luxury watch brands.</p>
+            <h1 class="font-semibold mb-2">Knowledgeable Staff</h1>
+            <p>Well trained staff and great looking</p>
+            <p>boutiques ensure that.</p>
           </div>
           <div class="w-14 h-14 flex items-center justify-center shadow-md bg-white rounded-md absolute top-12 -left-6">
             <img src="image/customer-service.png" alt="" class="w-10 h-10">
@@ -140,9 +161,9 @@
         </div>
         <div class="shadow-md py-6 px-10 text-end rounded-md relative">
           <div>
-            <h1>Authorized Retailer</h1>
-            <p>We an authorized retailer with over 40</p>
-            <p>plus luxury watch brands.</p>
+            <h1 class="font-semibold mb-2">After-Sales Support</h1>
+            <p>We value your watch as much as you</p>
+            <p>do.</p>
           </div>
           <div class="w-14 h-14 flex items-center justify-center shadow-md bg-white rounded-md absolute top-12 -left-6">
             <img src="image/customer-service.png" alt="" class="w-10 h-10">
@@ -150,9 +171,9 @@
         </div>
         <div class="shadow-md py-6 px-8 text-end rounded-md relative">
           <div>
-            <h1>Authorized Retailer</h1>
-            <p>We an authorized retailer with over 40</p>
-            <p>plus luxury watch brands.</p>
+            <h1 class="font-semibold mb-2">Loyalty Programme</h1>
+            <p>you can collect and redeem regularly,</p>
+            <p>get gifts, rewards.</p>
           </div>
           <div class="w-14 h-14 flex items-center justify-center bg-white shadow-md rounded-md absolute top-12 -left-6">
             <img src="image/loyalty-card.png" alt="" class="w-10 h-10">
@@ -164,10 +185,10 @@
 </div>
 
 <div class="my-16 md:px-20">
-  <div class="md:text-center">
+  <div class="px-3 text-center">
     <h1 class="font-bold text-red-500">Testimonial</h1>
     <h1 class="font-bold text-4xl">What Our Client Say's</h1>
-    <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta sit expedita, nemo exercitationem veniam maxime, illo illum consequatur reprehenderit facere laborum facilis. Minima commodi exercitationem accusamus, quae optio sequi.</p>
+    <p class="font-thin">I love how versatile this watch is. Whether I'm dressed up for a formal event or dressed down for a casual outing, it always looks great. The design is both modern and sophisticated.</p>
   </div>
   <div class="flex justify-center">
     <div class="flex md:flex-row flex-col justify-between gap-14 w-[88%] mt-20">
@@ -180,11 +201,11 @@
             <div class="icon">4.5</div>
           </div>
         </div>
-        <p class="mt-12">We are satisfied with Peter's responsiveness to our<br> needs, exceptional delivery time, and overall customer-service</p>
+        <p class="mt-12">The customer service was outstanding. They helped me choose the perfect watch for my needs and even followed up to ensure I was satisfied. It's clear they value their customers.</p>
         <div class="flex items-center justify-between mt-4">
           <div class="font-bold">
-            <h4>Pranil</h4>
-            <h6 class="text-[12px]">Alberto Watch</h6>
+            <h4 class="font-bold text-2xl">Pranil</h4>
+            <h6 class="ont-semibold text-gray-700">Alberto Watch</h6>
           </div>
           <div>
             icon
@@ -205,8 +226,8 @@
         <p class="mt-12">We are satisfied with Peter's responsiveness to our<br> needs, exceptional delivery time, and overall customer-service</p>
         <div class="flex items-center justify-between mt-4">
           <div class="font-bold">
-            <h4>Pranil</h4>
-            <h6 class="text-[12px]">Alberto Watch</h6>
+            <h4 class="font-bold text-2xl">Pranil</h4>
+            <h6 class="ont-semibold text-gray-700">Alberto Watch</h6>
           </div>
           <div>
             icon
@@ -222,10 +243,8 @@
 <div class="bg-textBg">
   <div class="flex justify-center py-10">
     <div class="flex md:flex-row flex-col gap-5 w-[88%]">
-      <div class="md:w-[30%] p-5 flex flex-col px-5 justify-center">
-        <div class="">
-          <img src="" alt="">
-        </div>
+      <div class="md:w-[30%] flex flex-col px-5 justify-center">
+        <p class="font-bold text-white text-xl">Alberto</p>
         <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
         <p class="font-bold text-white">Follow Us_____</p>
         <div class="flex gap-5 my-3">
@@ -235,7 +254,7 @@
           <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
         </div>
       </div>
-      <div class="md:w-[25%] list-none flex flex-col px-5 justify-center text-bgColor">
+      <div class="md:w-[22%] list-none flex flex-col px-5 text-bgColor">
         <p class="font-bold text-white my-3 text-xl">Products</p>
         <li> Smart Watch</li>
         <li class="my-3"> Luxury Watch</li>
@@ -244,28 +263,79 @@
         <li> Dress Watch</li>
       </div>
 
-      <div class="md:w-[25%] list-none text-white flex flex-col px-5 justify-center">
+      <div class="md:w-[20%] list-none text-white flex flex-col px-5">
         <p class="font-bold text-white my-3 text-xl">Quick links</p>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> About</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> Gallery</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+        <li>
+          <a href="index.html" class="gap-5 flex items-center">
+            <i class="fa-solid fa-arrow-right"></i>
+             <h1>Home</h1>
+          </a>
+        </li>
+        <li>
+          <a href="About.html" class="gap-5 flex items-center">
+            <i class="fa-solid fa-arrow-right my-3"></i>
+            <h1>About</h1>
+            </a>
+          </li>
+        <li>
+          <a href="product.html" class="gap-5 flex items-center">
+            <i class="fa-solid fa-arrow-right"></i>
+            <h1>Product</h1>
+          </a>
+        </li>
+        <li>
+          <a href="gallery.html" class="gap-5 flex items-center">
+            <i class="fa-solid fa-arrow-right my-3"></i>
+             <h1>Gallery</h1>
+            </a>
+          </li>
+        <li>
+          <a href="contact.html" class="gap-5 flex items-center">
+            <i class="fa-solid fa-arrow-right"></i>
+             <h1>Contact Us</h1>
+            </a>
+          </li>
       </div>
 
-      <div class="md:w-[25%] text-white flex flex-col px-5 justify-center">
+      <div class="md:w-[30%] text-white flex flex-col px-5">
         <p class="font-bold text-xl text-white my-3">Contact Us</p>
-        <p><i class="fa-solid fa-location-dot my-3"></i> A101, Mumbai India.</p>
-        <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
-        <p><i class="fa-solid fa-phone my-3"></i> +91-1234567890</p>
-        <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
+        <p>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <h1>07,Command,Lagos State.</h1>
+          </div>
+        </p>
+        <p class="">
+          <div class="flex gap-3 items-center my-2">
+            <i class="fa-solid fa-envelope"></i>
+            <h1>shalom@gmail.com</h1>
+          </div>
+        </p>
+        <p>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-phone"></i>
+            <h1>+2349038186039</h1>
+          </div>
+        </p>
+        <p>
+          <div class="flex gap-3 mt-2">
+            <i class="fa-solid fa-clock"></i>
+            <h1>Mon-Sat 7:00am - 7:00pm</h1>
+          </div>
+        </p>
       </div>
     </div>
   </div>
   <div class="bg-gray-800 p-2 text-center text-bgColor font-semibold">© 2024 Copyright: Alberto</div>
 </div>
 
-
+<script>
+  let About = document.getElementById("About")
+  let readmore = document.getElementById("readmore")
+  readmore.onclick = function(){
+    About.classList.toggle("hidden");
+  }
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
