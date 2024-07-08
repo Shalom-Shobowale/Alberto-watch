@@ -85,7 +85,7 @@
                       <a href="product.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Store</a>
                     </li>
                     <li>
-                      <a href="product.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Product</a>
+                      <a href="product.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Support</a>
                     </li>
                   </ul>
                   <div class="py-1">
@@ -101,19 +101,20 @@
           </li>
         </ul>
       </div>
-      <div class="flex items-center">
-      <input type="text" placeholder="Search" class="hidden md:flex rounded-sm">
-      <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="hidden md:flex items-center">
+        <input type="text" placeholder="Search" class="md:flex rounded-sm py-2">
+        <div class="w-10 h-10 bg-touch text-bgColor flex items-center justify-center rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
     </div>
 </nav> 
 
-<div class="bg-gray-100 flex justify-center border-b border-gray-300" id="modalCont">
-    <div class="w-[80%] p-16">
-        <h1 class="text-4xl font-semibold">Products</h1>
+<div class="bg-gray-100 flex justify-center border-b border-gray-300 bg-cover bg-center bg-no-repeat" style="background-image: url(image/dark-product.png);" id="modalCont">
+    <div class="w-[80%] py-28">
+        <h1 class="text-5xl font-semibold text-bgColor mb-3">Products</h1>
         <div class="flex items-center gap-2">
-            <div><a href="index.html" class="text-[16px] text-touch">Home</a></div>
-            <div class="text-[16px]"><span class="font-bold">></span>Products</div>
+            <div><a href="index.html" class="text-[16px] text-bgColor">Home</a></div>
+            <div class="text-[16px] text-bgColor flex items-center gap-2"><span><i class="fa-solid fa-greater-than text-sm"></i></span> Product</div>
+
         </div>
     </div>
 </div>
@@ -299,17 +300,17 @@
  <div class="bg-gray-100" id="support">
     <h1 class="text-5xl font-bold text-center py-10">Support</h1>
     <div class="text-gray-800 p-6">
-        <div class="w-[85%] mx-auto bg-white shadow-md rounded-lg">
+        <div class="md:w-[85%] mx-auto bg-white shadow-md rounded-lg">
             <!-- Tabs -->
             <div class="border-b border-gray-200">
                 <nav class="flex flex-wrap -mb-px" id="tabs">
                     <button data-target="tab1" class="tab-link px-4 py-2 font-bold text-touch border-b-2 border-blue-600 focus:outline-none">
                         FQA'S
                     </button>
-                    <button data-target="tab2" class="tab-link px-4 py-2 text-touch border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
+                    <button data-target="tab2" class="tab-link px-4 py-2 font-bold text-touch border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
                         Customer Service
                     </button>
-                    <button data-target="tab3" class="tab-link px-4 py-2 text-gray-600 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
+                    <button data-target="tab3" class="tab-link px-4 py-2 font-bold text-touch border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600 focus:outline-none">
                         Tab 3
                     </button>
                 </nav>
@@ -362,8 +363,16 @@
                 </div>
     
                 <div id="tab2" class="tab-content hidden">
-                    <h2 class="text-2xl font-bold mb-4">Content for Tab 2</h2>
-                    <p>This is the content for the second tab.</p>
+                    <h2 class="text-2xl font-bold mb-4">We're Here to Help</h2>
+                    <p class="text-gray-500">At Alberto, our customers are at the heart of everything we do. Whether you have questions about our products, need assistance with your order, or require support for your watch, we’re here to provide you with exceptional service every step of the way.</p>
+                    <p>
+                        <h1 class="text-2xl font-bold mb-4 my-4">Contact Us</h1>
+                        <p class="text-gray-500">We’re available to assist you via multiple channels. Choose the method that’s most convenient for you:</p>
+                        <li class="my-4 text-gray-500">Email: ShalomShobowale"gmail.com</li>
+                        <li class="text-gray-500">Phone: 09038186039</li>
+                        <li class="my-4 text-gray-500">Live Chat: Available on our website during business hours 7am - 7pm.</li>
+                        <p class="text-gray-500">Our customer service team is available 7am - 7pm. We strive to respond to all inquiries within [12 hours] hours.</p>
+                    </p>
                 </div>
                 <div id="tab3" class="tab-content hidden">
                     <h2 class="text-2xl font-bold mb-4">Content for Tab 3</h2>
@@ -376,51 +385,94 @@
 
 
   <!-- footer -->
-<div class="bg-touch" id="footer">
-<div class="flex justify-center py-10">
-    <div class="flex md:flex-row flex-col gap-5 w-[88%]">
-    <div class="md:w-[30%] p-5 flex flex-col px-5 justify-center">
-        <div class="">
-        <img src="" alt="">
+  <div class="bg-textBg">
+    <div class="flex justify-center py-10">
+      <div class="flex md:flex-row flex-col gap-5 w-[88%]">
+        <div class="md:w-[30%] flex flex-col px-5 justify-center">
+          <p class="font-bold text-white text-xl">Alberto</p>
+          <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
+          <p class="font-bold text-white">Follow Us_____</p>
+          <div class="flex gap-5 my-3">
+            <div><a href=""><i class="text-bgColor fa-brands fa-facebook-f"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-linkedin"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-twitter"></i></a></div>
+            <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
+          </div>
         </div>
-        <p class="text-bgColor text-justify">Our watches are made for your wrists, Crafted with Love & Care. We strive to provide all kinds of watches, from classic to the latest designs. We sell authentic products with warranties.</p>
-        <p class="font-bold text-white">Follow Us_____</p>
-        <div class="flex gap-5 my-3">
-        <div><a href=""><i class="text-bgColor fa-brands fa-facebook-f"></i></a></div>
-        <div><a href=""><i class="text-bgColor fa-brands fa-linkedin"></i></a></div>
-        <div><a href=""><i class="text-bgColor fa-brands fa-twitter"></i></a></div>
-        <div><a href=""><i class="text-bgColor fa-brands fa-instagram"></i></a></div>
+        <div class="md:w-[22%] list-none flex flex-col px-5 text-bgColor">
+          <p class="font-bold text-white my-3 text-xl">Products</p>
+          <li> Smart Watch</li>
+          <li class="my-3"> Luxury Watch</li>
+          <li> Vintage</li>
+          <li class="my-3"> Digital Watch</li>
+          <li> Dress Watch</li>
         </div>
-    </div>
-    <div class="md:w-[25%] list-none flex flex-col px-5 justify-center text-bgColor">
-        <p class="font-bold text-white my-3 text-xl">Products</p>
-        <li> Smart Watch</li>
-        <li class="my-3"> Luxury Watch</li>
-        <li> Vintage</li>
-        <li class="my-3"> Digital Watch</li>
-        <li> Dress Watch</li>
-    </div>
 
-    <div class="md:w-[25%] list-none text-white flex flex-col px-5 justify-center">
-        <p class="font-bold text-white my-3 text-xl">Quick links</p>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> About</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Product</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right my-3"></i> Gallery</a></li>
-        <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
-    </div>
+        <div class="md:w-[20%] list-none text-white flex flex-col px-5">
+          <p class="font-bold text-white my-3 text-xl">Quick links</p>
+          <li>
+            <a href="index.html" class="gap-5 flex items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+               <h1>Home</h1>
+            </a>
+          </li>
+          <li>
+            <a href="About.html" class="gap-5 flex items-center">
+              <i class="fa-solid fa-arrow-right my-3"></i>
+              <h1>About</h1>
+              </a>
+            </li>
+          <li>
+            <a href="product.html" class="gap-5 flex items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+              <h1>Product</h1>
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html" class="gap-5 flex items-center">
+              <i class="fa-solid fa-arrow-right my-3"></i>
+               <h1>Gallery</h1>
+              </a>
+            </li>
+          <li>
+            <a href="contact.html" class="gap-5 flex items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+               <h1>Contact Us</h1>
+              </a>
+            </li>
+        </div>
 
-    <div class="md:w-[25%] text-white flex flex-col px-5 justify-center">
-        <p class="font-bold text-xl text-white my-3">Contact Us</p>
-        <p><i class="fa-solid fa-location-dot my-3"></i> A101, Mumbai India.</p>
-        <p><i class="fa-solid fa-envelope"></i> demo@example.com</p>
-        <p><i class="fa-solid fa-phone my-3"></i> +91-1234567890</p>
-        <p><i class="fa-solid fa-clock"></i> Mon-Sat 10:00pm - 7:00pm</p>
+        <div class="md:w-[30%] text-white flex flex-col px-5">
+          <p class="font-bold text-xl text-white my-3">Contact Us</p>
+          <p>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <h1>07,Command,Lagos State.</h1>
+            </div>
+          </p>
+          <p class="">
+            <div class="flex gap-3 items-center my-2">
+              <i class="fa-solid fa-envelope"></i>
+              <h1>shalom@gmail.com</h1>
+            </div>
+          </p>
+          <p>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone"></i>
+              <h1>+2349038186039</h1>
+            </div>
+          </p>
+          <p>
+            <div class="flex gap-3 mt-2">
+              <i class="fa-solid fa-clock"></i>
+              <h1>Mon-Sat 7:00am - 7:00pm</h1>
+            </div>
+          </p>
+        </div>
+      </div>
     </div>
-    </div>
-</div>
-<div class="bg-blue-900 p-2 text-center text-bgColor font-semibold">© 2024 Copyright: Alberto</div>
-</div>
+    <div class="bg-gray-800 p-2 text-center text-bgColor font-semibold">© 2024 Copyright: Alberto</div>
+  </div>
 
 
 <script>
