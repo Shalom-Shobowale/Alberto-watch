@@ -324,3 +324,53 @@ async function fetchBySearch(value) {
 searchBar.addEventListener("keyup", function (e) {
   fetchBySearch(e.target.value);
 });
+
+
+function displayInfo(position) {
+  const now = new Date();
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const infoString = `Latitude: ${latitude} | Longitude: ${longitude} | Date: ${date} | Time: ${time}`;
+  document.getElementById("info").textContent = infoString;
+}
+
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      document.getElementById("info").textContent =
+        "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      document.getElementById("info").textContent =
+        "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      document.getElementById("info").textContent =
+        "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      document.getElementById("info").textContent =
+        "An unknown error occurred.";
+      break;
+  }
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(displayInfo, showError);
+  } else {
+    document.getElementById("info").textContent =
+      "Geolocation is not supported by this browser.";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  getLocation();
+  setInterval(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(displayInfo, showError);
+    }
+  }, 1000);
+});
