@@ -31,7 +31,7 @@ function createWatch({ name, discountedPrice, price, imgURL }) {
                 <p>⭐⭐⭐⭐⭐</p>
             </div>
               <div class="text-center font-bold py-2">
-                <p>${name}</p>
+                <p>${name.split(" ").map(word => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`).join(" ")}</p>
             </div>
               <div class="flex justify-center gap-5 font-bold">
                 <p class="line-through text-red-500">#${discountedPrice}.00</p>
