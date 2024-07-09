@@ -281,7 +281,7 @@ const fetchByPrice = async function (maxPrice) {
   }
 };
 
-tab.addEventListener("click", async function (e) {
+tab?.addEventListener("click", async function (e) {
   let categorys = e.target.closest("#category");
 
   if (!categorys) return;
@@ -292,7 +292,7 @@ tab.addEventListener("click", async function (e) {
   }
 });
 
-colorCont.addEventListener("click", async function (e) {
+colorCont?.addEventListener("click", async function (e) {
   let colors = e.target.closest("#color");
 
   if (colors.checked) {
@@ -302,7 +302,7 @@ colorCont.addEventListener("click", async function (e) {
 });
 
 // PRICE
-priceRange.addEventListener("change", function (e) {
+priceRange?.addEventListener("change", function (e) {
   priceRangeValue.textContent = `$${new Intl.NumberFormat().format(
     e.target.value
   )}`;
@@ -321,56 +321,65 @@ async function fetchBySearch(value) {
   }
 }
 
-searchBar.addEventListener("keyup", function (e) {
+searchBar?.addEventListener("keyup", function (e) {
   fetchBySearch(e.target.value);
 });
 
 
-function displayInfo(position) {
-  const now = new Date();
-  const date = now.toLocaleDateString();
-  const time = now.toLocaleTimeString();
-  const latitude = position.coords.latitude;
-  const longitude = position.coords.longitude;
-  const infoString = `Latitude: ${latitude} | Longitude: ${longitude} | Date: ${date} | Time: ${time}`;
-  document.getElementById("info").textContent = infoString;
-}
+// const date = document.querySelector("#date")
+// const time = document.querySelector("#time")
+// const locations = document.querySelector("#location")
+// console.log(date, time, locations)
 
-function showError(error) {
-  switch (error.code) {
-    case error.PERMISSION_DENIED:
-      document.getElementById("info").textContent =
-        "User denied the request for Geolocation.";
-      break;
-    case error.POSITION_UNAVAILABLE:
-      document.getElementById("info").textContent =
-        "Location information is unavailable.";
-      break;
-    case error.TIMEOUT:
-      document.getElementById("info").textContent =
-        "The request to get user location timed out.";
-      break;
-    case error.UNKNOWN_ERROR:
-      document.getElementById("info").textContent =
-        "An unknown error occurred.";
-      break;
-  }
-}
+// function displayDateTime() {
+//   const now = new Date();
+//   const date = now.toLocaleDateString();
+//   const time = now.toLocaleTimeString();
+//   date.innerHTML = `Date: ${date} | Time: ${time}`;
+// }
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(displayInfo, showError);
-  } else {
-    document.getElementById("info").textContent =
-      "Geolocation is not supported by this browser.";
-  }
-}
+// function displayLocation(position) {
+//   const latitude = position.coords.latitude;
+//   const longitude = position.coords.longitude;
+//   location.textContent = `Latitude: ${latitude} | Longitude: ${longitude}`;
+// }
 
-document.addEventListener("DOMContentLoaded", () => {
-  getLocation();
-  setInterval(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(displayInfo, showError);
-    }
-  }, 1000);
-});
+// function showError(error) {
+//   switch (error.code) {
+//     case error.PERMISSION_DENIED:
+//       document.getElementById("location").textContent =
+//         "User denied the request for Geolocation.";
+//       break;
+//     case error.POSITION_UNAVAILABLE:
+//       document.getElementById("location").textContent =
+//         "Location information is unavailable.";
+//       break;
+//     case error.TIMEOUT:
+//       document.getElementById("location").textContent =
+//         "The request to get user location timed out.";
+//       break;
+//     case error.UNKNOWN_ERROR:
+//       document.getElementById("location").textContent =
+//         "An unknown error occurred.";
+//       break;
+//   }
+// }
+
+// function getLocation() {
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(displayLocation, showError);
+//   } else {
+//     document.getElementById("location").textContent =
+//       "Geolocation is not supported by this browser.";
+//   }
+// }
+
+// displayDateTime();
+// getLocation();
+// // document.addEventListener("DOMContentLoaded", () => {
+// //   displayDateTime();
+// //   getLocation();
+
+// //   // Update time every second
+// //   setInterval(displayDateTime, 1000);
+// // });
