@@ -6,6 +6,15 @@
   <link href="./output.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .carousel {
+            
+            transition: transform 0.5s ease-in-out;
+        }
+        .hidden {
+            display: none;
+        }
+  </style>
 </head>
 <body class="font-Outfit">
   <nav class="bg-textBg sticky top-0 z-10 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -207,11 +216,11 @@
    </section>
 
   <!-- what our client says -->
-   <div class="flex flex-col justify-center bg-slate-100">
+   <!-- <div class="flex flex-col justify-center bg-slate-100">
       <h1 class="text-4xl text-center font-bold my-14">Whats our client say</h1>
       <div class="relative">
         <div class="h-0 w-[500px] border-b-[380px] border-black border-r-[100px] border-x-transparent"></div>
-        <div class="w-[85%]"></div>
+        <div class="w-[85%]">
           <div class="absolute top-16 left-28">
             <div class="flex flex-row gap-10 w-[1000px]">
               <div class="bg-bgColor shadow-md w-[50%] h-64 rounded-md p-8">
@@ -246,7 +255,84 @@
           </div>
         </div>
       </div>
-   </div>
+   </div> -->
+
+
+   <!-- ---------------------------------------------------------------- -->
+    <div class="flex flex-col justify-center bg-slate-100">
+        <h1 class="text-4xl text-center font-bold my-14">What our clients say</h1>
+        <div class="relative">
+            <div class="h-0 w-[500px] border-b-[380px] border-black border-r-[100px] border-x-transparent"></div>
+            <div class="w-[85%] mx-auto absolute top-16 left-28">
+                <div class="carousel-container relative overflow-hidden w-full">
+                    <div class="carousel">
+                        <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
+                            <div class="flex items-center gap-5">
+                                <div class="h-20 w-20 rounded-full bg-blue-600">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <p class="font-semibold text-gray-700">Alberto Watch</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p>From the office to outdoor adventures, this watch has stood the test of time. Its robust build and reliable performance make it a must-have for anyone seeking both durability and style.</p>
+                            </div>
+                        </div>
+                        <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
+                            <div class="flex items-center gap-5">
+                                <div class="h-24 w-24 rounded-full bg-blue-600">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <p class="font-semibold text-gray-700">Alberto Watch</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p>The functionality of this watch is impressive. The chronograph is accurate, and the luminous hands are a great feature for nighttime use. It's a perfect blend of form and function.</p>
+                            </div>
+                        </div>
+                        <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
+                            <div class="flex items-center gap-5">
+                                <div class="h-24 w-24 rounded-full bg-blue-600">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <p class="font-semibold text-gray-700">Alberto Watch</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p>The functionality of this watch is impressive. The chronograph is accurate, and the luminous hands are a great feature for nighttime use. It's a perfect blend of form and function.</p>
+                            </div>
+                        </div>
+                        <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
+                            <div class="flex items-center gap-5">
+                                <div class="h-24 w-24 rounded-full bg-blue-600">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <p class="font-semibold text-gray-700">Alberto Watch</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p>The functionality of this watch is impressive. The chronograph is accurate, and the luminous hands are a great feature for nighttime use. It's a perfect blend of form and function.</p>
+                            </div>
+                        </div>
+                        <!-- Add more testimonial items as needed -->
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button id="prev" class="bg-blue-500 text-white px-4 py-2 rounded-l-md">Prev</button>
+                    <button id="next" class="bg-blue-500 text-white px-4 py-2 rounded-r-md">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- ---------------------------------------------------------------- -->
 
    <!-- limited -->
     <div class="my-14">
@@ -443,62 +529,126 @@
   <div class="bg-gray-800 p-2 text-center text-bgColor font-semibold sticky bottom-0">
     <marquee behavior="scroll" direction="left">
       <div class="flex gap-10">
-        <div id="time"></div>
-        <div id="date"></div>
-        <div id="location"></div>
+        <div class="z-10 text-white" id="time"></div>
+        <div class="z-10 text-white" id="date"></div>
+        <div class="z-10 text-white" id="location"></div>
       </div>
     </marquee>
   </div>
   
   <script>
-    (async function() {
-    // Generate or retrieve a unique identifier for the visitor
-    const visitorIdKey = 'visitor-id';
-    let visitorId = localStorage.getItem(visitorIdKey);
+    // (async function() {
+    //   // Generate or retrieve a unique identifier for the visitor
+    //   const visitorIdKey = 'visitor-id';
+    //   let visitorId = localStorage.getItem(visitorIdKey);
+        
+    //   if (!visitorId) {
+    //     // Generate a new UUID
+    //     visitorId = crypto.randomUUID();
+    //     localStorage.setItem(visitorIdKey, visitorId);
+    //   }
+
+    //   // Define the backend endpoint to check/update the visitor count
+    //   const backendUrl = 'https://your-backend-url.com/visitor-count';
+
+    //   // Send the visitor ID to the backend and get the updated visitor count
+    //   try {
+    //     const response = await fetch(backendUrl, {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json'
+    //       },
+    //       body: JSON.stringify({ visitorId })
+    //     });
+
+    //     const data = await response.json();
+
+    //     // Update the visitor count on the webpage
+    //     document.getElementById('visitor-count').textContent = data.visitorCount;
+    //   } catch (error) {
+    //     console.error('Error updating visitor count:', error);
+    //   }
+    // })();
+
+    // CAROUSEL ====================================================================
+
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const itemWidth = carousel.children[0].offsetWidth + parseInt(window.getComputedStyle(carousel.children[0]).marginRight, 10);
+      carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < carousel.children.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    // ====================================================================
+
+    const timeEl = document.querySelector("#time");
+    const locationEl = document.querySelector("#location");
+
+    let dateTime = new Date();
+    let time = dateTime.toLocaleTimeString();
+    let date = dateTime.toLocaleDateString();
+
+    timeEl.textContent = `Current Date/Time: ${date}, ${time}`
     
-    if (!visitorId) {
-        // Generate a new UUID
-        visitorId = crypto.randomUUID();
-        localStorage.setItem(visitorIdKey, visitorId);
+
+    // GET LOCATION
+    function displayLocation(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      getLocationStr(latitude, longitude);
     }
 
-    // Define the backend endpoint to check/update the visitor count
-    const backendUrl = 'https://your-backend-url.com/visitor-count';
-
-    // Send the visitor ID to the backend and get the updated visitor count
-    try {
-        const response = await fetch(backendUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ visitorId })
-        });
-
-        const data = await response.json();
-
-        // Update the visitor count on the webpage
-        document.getElementById('visitor-count').textContent = data.visitorCount;
-    } catch (error) {
-        console.error('Error updating visitor count:', error);
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(displayLocation);
+      } else {
+        document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
+      }
     }
-})();
 
-let time = document.getElementById("time");
-setInterval(()=>{
-  let d = new Date();
-  time.innerHTML = d.toLocaleTimeString();
-},1000)
+    getLocation();
 
-// date
-let date = document.getElementById("date");
-setInterval(()=>{
-  let d = new Date();
-  date.innerHTML = d.toLocaleDateString();
-})
-//location
+    async function getLocationStr(latitude, longitude) {
+      const url = `https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse?lat=${latitude}&lon=${longitude}&format=json`;
+
+      const options = {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-key': '16b5b415b1msh7cfdea873864269p13a51bjsn5ec40d5e83c6',
+          'x-rapidapi-host': 'forward-reverse-geocoding.p.rapidapi.com'
+        }
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        locationEl.textContent = `Current Location: ${result.display_name}`
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+
 
   </script>
+  <!-- <script src="./script.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
