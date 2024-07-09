@@ -731,6 +731,11 @@ body{
   margin-right: 1.25rem;
 }
 
+.mx-9{
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -781,6 +786,21 @@ body{
   margin-bottom: 1.25rem;
 }
 
+.mx-48{
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-24{
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 .-mb-px{
   margin-bottom: -1px;
 }
@@ -815,6 +835,10 @@ body{
 
 .ms-2\.5{
   margin-inline-start: 0.625rem;
+}
+
+.ms-9{
+  margin-inline-start: 2.25rem;
 }
 
 .mt-10{
@@ -1161,8 +1185,8 @@ body{
   resize: both;
 }
 
-.list-none{
-  list-style-type: none;
+.list-square{
+  list-style-type: square;
 }
 
 .grid-cols-1{
@@ -1626,6 +1650,11 @@ body{
   padding-bottom: 1.5rem;
 }
 
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pt-14{
   padding-top: 3.5rem;
 }
@@ -1841,6 +1870,10 @@ no-scrollbar{
   scrollbar-width: none;
 }
 
+.hover\:list-square:hover{
+  list-style-type: square;
+}
+
 .hover\:border:hover{
   border-width: 1px;
 }
@@ -1893,6 +1926,11 @@ no-scrollbar{
 .hover\:text-touch:hover{
   --tw-text-opacity: 1;
   color: rgb(0 41 107 / var(--tw-text-opacity));
+}
+
+.hover\:text-textBg:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -1956,10 +1994,13 @@ no-scrollbar{
 }
 
 @media (min-width: 768px){
+<<<<<<< HEAD
+=======
   .md\:left-28{
     left: 7rem;
   }
 
+>>>>>>> 0e4d66233daa31cf2f05a4399d48a25e44a21a95
   .md\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;

@@ -532,41 +532,28 @@
   </div>
   
   <script>
-    // (async function() {
-    //   // Generate or retrieve a unique identifier for the visitor
-    //   const visitorIdKey = 'visitor-id';
-    //   let visitorId = localStorage.getItem(visitorIdKey);
-        
-    //   if (!visitorId) {
-    //     // Generate a new UUID
-    //     visitorId = crypto.randomUUID();
-    //     localStorage.setItem(visitorIdKey, visitorId);
-    //   }
+    const visitorCount = document.querySelector("#visitor-count")
 
-    //   // Define the backend endpoint to check/update the visitor count
-    //   const backendUrl = 'https://your-backend-url.com/visitor-count';
+    const url = 'https://api.api-ninjas.com/v1/counter?id=test_id&hit=true';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-Api-Key': 'kX1bZVOtOSbVv+fWbnxchw==9cmAVdM9Nn6wRtS0',
+      }
+    };
 
-    //   // Send the visitor ID to the backend and get the updated visitor count
+    // async function getCount() {
     //   try {
-    //     const response = await fetch(backendUrl, {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({ visitorId })
-    //     });
-
-    //     const data = await response.json();
-
-    //     // Update the visitor count on the webpage
-    //     document.getElementById('visitor-count').textContent = data.visitorCount;
+    //     const response = await fetch(url, options);
+    //     const result = await response.json();
+    //     visitorCount.textContent = result.value
     //   } catch (error) {
-    //     console.error('Error updating visitor count:', error);
+    //     console.error(error);
     //   }
-    // })();
+    // }
+    // getCount()
 
     // CAROUSEL ====================================================================
-
     const carousel = document.querySelector('.carousel');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
