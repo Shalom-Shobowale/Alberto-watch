@@ -1139,10 +1139,6 @@ body{
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-10{
-  grid-template-rows: repeat(10, minmax(0, 1fr));
-}
-
 .grid-rows-2{
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -1903,22 +1899,9 @@ no-scrollbar{
 }
 
 @media (min-width: 768px){
-  .md\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
-  .md\:row-span-2{
-    grid-row: span 2 / span 2;
-  }
-
   .md\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
-  }
-
-  .md\:my-16{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
   }
 
   .md\:ml-24{
@@ -1927,10 +1910,6 @@ no-scrollbar{
 
   .md\:mt-0{
     margin-top: 0px;
-  }
-
-  .md\:mb-10{
-    margin-bottom: 2.5rem;
   }
 
   .md\:block{

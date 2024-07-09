@@ -178,5 +178,17 @@
     "batteryCapacity": "72 Hours",
     "imgURL": "https://thetestingstudio.com/wristarc/assets/img/shop/9.png",
     "color": "Black"
+  },
+  {
+    "name": "Hyper Chrome",
+    "customerReview": "7 Customer Review",
+    "price": 100.0,
+    "discountedPrice": 75.0,
+    "sku": 1998,
+    "productID": "0707",
+    "productCategory": "Men",
+    "batteryCapacity": "72 Hours",
+    "imgURL": "https://img.freepik.com/premium-photo/fashionable-smart-watch-concept-with-modern-technology_952161-40569.jpg?ga=GA1.1.1757217680.1706537941&semt=ais_user",
+    "color": "Black"
   }
 ]
