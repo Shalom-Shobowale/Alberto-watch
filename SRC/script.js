@@ -88,9 +88,9 @@ function displayPopup({
   let noOfItem = 1;
   const popUp = `
     <div class="fixed top-0 z-[999] popUp" id="popUp">
-        <div class="flex h-screen justify-center items-center">
+        <div class="flex md:h-screen justify-center items-center">
             <div class="md:w-[75%] h-[90%] md:h-fit">
-                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative overflow-y-hidden">
+                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative">
                     <div class="absolute z-[999] right-2 top-2" id="Close"><a href="javascript:void(0);">❌</a></div>
                     <div class="md:w-[50%]">
                         <div>

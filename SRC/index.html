@@ -223,11 +223,9 @@
                     <div class="carousel flex">
                         <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
                             <div class="flex items-center gap-5">
-                                <div class="h-20 w-20 rounded-full bg-blue-600">
-                                    <img src="" alt="">
-                                </div>
+                                <div class="h-24 w-24 rounded-full bg-no-repeat bg-cover bg-center" style="background-image: url(image/team-1.jpg);"></div>
                                 <div>
-                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <h1 class="font-bold text-2xl">Princess Anna</h1>
                                     <p class="font-semibold text-gray-700">Alberto Watch</p>
                                 </div>
                             </div>
@@ -237,11 +235,9 @@
                         </div>
                         <div class="bg-bgColor shadow-md h-64 rounded-md p-8 mx-4 flex-none w-1/2">
                             <div class="flex items-center gap-5">
-                                <div class="h-24 w-24 rounded-full bg-blue-600">
-                                    <img src="" alt="">
-                                </div>
+                                <div class="h-24 w-24 rounded-full bg-cover bg-center bg-no-repeat" style="background-image: url(image/team4.jpg);"></div>
                                 <div>
-                                    <h1 class="font-bold text-2xl">Pranil</h1>
+                                    <h1 class="font-bold text-2xl">David Jacks</h1>
                                     <p class="font-semibold text-gray-700">Alberto Watch</p>
                                 </div>
                             </div>
@@ -508,16 +504,16 @@
       }
     };
 
-    // async function getCount() {
-    //   try {
-    //     const response = await fetch(url, options);
-    //     const result = await response.json();
-    //     visitorCount.textContent = result.value
-    //   } catch (error) {
-    //     console.error(error);
-    //   }
-    // }
-    // getCount()
+    async function getCount() {
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        visitorCount.textContent = result.value
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getCount()
 
     // CAROUSEL ====================================================================
     const carousel = document.querySelector('.carousel');
