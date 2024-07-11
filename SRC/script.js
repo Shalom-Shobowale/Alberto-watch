@@ -89,8 +89,8 @@ function displayPopup({
   const popUp = `
     <div class="fixed top-0 z-[999] popUp" id="popUp">
         <div class="flex h-screen justify-center items-center">
-            <div class="md:w-[75%] h-[90%] md:h-fit">
-                <div class="flex md:flex-row flex-col bg-bgColor rounded-md shadow-md border relative overflow-y-hidden">
+            <div class="md:w-[75%] h-[400px] bg-bgColor md:h-[800px]">
+                <div class="flex md:flex-row flex-col sm:py-10 rounded-md shadow-md border relative overflow-y-scroll no-scrollbar">
                     <div class="absolute z-[999] right-2 top-2" id="Close"><a href="javascript:void(0);">❌</a></div>
                     <div class="md:w-[50%]">
                         <div>
@@ -98,7 +98,7 @@ function displayPopup({
                                 <div class="max-w-3xl mx-auto flex items-center flex-col-reverse">
                                     <!-- Tabs -->
                                     <div>
-                                        <nav class="flex flex-wrap gap-1 justify-center -mb-px mb-2" id="tabs">
+                                        <nav class="hidden md:flex flex-wrap gap-1 justify-center" id="tabs">
                                             <button data-target="tab1" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
                                                 <img src=${imgURL} alt="" class="w-20 h-16">
                                             </button>
@@ -108,24 +108,15 @@ function displayPopup({
                                             <button data-target="tab3" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
                                                 <img src=${imgURL} alt="" class="w-20 h-16">
                                             </button>
-                                            <button data-target="tab4" class="tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
+                                            <button data-target="tab4" class="hidden lg:block tab-link px-2 py-4 border rounded-md hover:border-touch focus:outline-none">
                                                 <img src=${imgURL} alt="" class="w-20 h-16">
                                             </button>
                                         </nav>
                                     </div>
                             
                                     <!-- Tab Content -->
-                                    <div class="my-16">
-                                        <div class="tab-content">
-                                          <img src=${imgURL} alt="" class="w-80">
-                                        </div>
-                                        <div class="tab-content hidden">
-                                          <img src=${imgURL} alt="" class="w-80">
-                                        </div>
-                                        <div class="tab-content hidden">
-                                          <img src=${imgURL} alt="" class="w-80">
-                                        </div>
-                                        <div class="tab-content hidden">
+                                    <div class="my-4 md:my-16">
+                                        <div class="tab-content bg-blue-500">
                                           <img src=${imgURL} alt="" class="w-80">
                                         </div>
                                     </div>
@@ -134,9 +125,17 @@ function displayPopup({
                         </div>
                     </div>
             
-                    <div class="md:w-[50%] px-5 relative">
-                        <div class="mt-8">
-                            <h1 class="text-4xl font-semibold">${name}</h1>
+                    <div class="md:w-[50%] h-[100px] px-5 py-6 relative">
+                        <div class="md:mt-8">
+                            <h1 class="text-4xl font-semibold">${name
+                              .split(" ")
+                              .map(
+                                (word) =>
+                                  `${word.charAt(0).toUpperCase()}${word
+                                    .slice(1)
+                                    .toLowerCase()}`
+                              )
+                              .join(" ")}</h1>
                             <div class="flex items-center my-2">
                                 <p class="flex gap-2">
                                     <i class="fa-solid fa-star text-touch"></i>
@@ -147,23 +146,23 @@ function displayPopup({
                                 </p>
                                 <h1> ( Customer Review )</h1>
                             </div>
-                            <div class="border-y h-80 overflow-y-scroll no-scrollbar">
+                            <div class="border-y h-48 md:h-80 overflow-y-scroll no-scrollbar">
                                 <div class="flex gap-5 my-1">
                                     <h1 class="line-through font-semibold"><i class="fa-solid fa-naira-sign"></i>${new Intl.NumberFormat().format(
                                       price
                                     )}.00</h1>
                                     <h1 class="font-semibold"><i class="fa-solid fa-naira-sign"></i>${new Intl.NumberFormat().format(
                                       price - 0.15 * price
-                                    )}.00</h1>
+                                    )}</h1>
                                     <div class="text-bgColor text-[12px] bg-textBg px-4 py-1 rounded-md hover:bg-touch font-semibold">-15%</div>
                                 </div>
                                 <h6 class="font-bold text-red-600">Technology</h6>
                                 <div class="mb-2">
-                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span>Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
-                                    <p><span class="font-bold"> Processor: </span>A small computer processor that runs the watch's operating system and apps.</p>
-                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span>Connectivity technology for pairing with smartphones or other devices.</p>
-                                    <p class="text-sm"><span class="font-bold">Battery: </span>A rechargeable battery, often with several days or weeks of battery life.</p>
-                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span>Many smartwatches feature water resistance or waterproofing.</p>
+                                    <p class="text-sm"><span class="font-bold">Touchscreen interface:</span> Allows users to interact with the watch by tapping, swiping, and pinching on the display.</p>
+                                    <p><span class="font-bold"> Processor: </span> A small computer processor that runs the watch's operating system and apps.</p>
+                                    <p class="text-sm"><span class="font-bold">Bluetooth: </span> Connectivity technology for pairing with smartphones or other devices.</p>
+                                    <p class="text-sm"><span class="font-bold">Battery: </span> A rechargeable battery, often with several days or weeks of battery life.</p>
+                                    <p class="text-sm"><span class="font-bold">Water Resistance: </span> Many smartwatches feature water resistance or waterproofing.</p>
                                 </div>
                                 <div>
                                     <h6 class="text-[14px] my-2">Product Features:</h6>
@@ -192,9 +191,26 @@ function displayPopup({
                                         </div>
                                     </div>
                                 </div>
+                                <div class="flex md:hidden items-center gap-6 border-t py-2 md:absolute md:bottom-6 pt-5">
+                                  <div class="flex">
+                                      <div class="w-8 h-8 text-[12px] border z-[999] flex justify-center items-center cursor-pointer" onclick="${() =>
+                                        console.log(noOfItem)}" >+</div>
+                                      <div class="w-8 h-8 text-[12px] border flex justify-center items-center">${noOfItem}</div>
+                                      <div class="w-8 h-8 text-[12px] border flex justify-center items-center cursor-pointer">-</div>
+                                  </div>
+                                  <div class="flex gap-3">
+                                      <div>
+                                          <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                                      </div>
+                                      <div>
+                                          <button class="text-white text-[12px] bg-textBg font-semibold px-4 py-2 rounded-md hover:bg-touch">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+                                      </div>
+                                      <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
+                                  </div>
+                              </div>
                             </div>
                             
-                            <div class="flex items-center gap-6 border-t py-2 absolute bottom-6 pt-5">
+                            <div class="hidden md:flex items-center gap-6 border-t py-2 md:absolute md:bottom-6 pt-5">
                                 <div class="flex">
                                     <div class="w-8 h-8 text-[12px] border z-[999] flex justify-center items-center cursor-pointer" onclick="${() =>
                                       console.log(noOfItem)}" >+</div>
@@ -210,7 +226,6 @@ function displayPopup({
                                     </div>
                                     <div class="px-4 py-2 flex text-[12px] justify-center hover:bg-touch items-center rounded-md bg-textBg"><i class="fa-solid fa-heart text-white"></i></div>
                                 </div>
-                            
                             </div>
                             
                         </div>
